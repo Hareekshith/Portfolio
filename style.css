@@ -9,6 +9,16 @@
   background-color: var(--tbar);
   float: fixed;
 }
+#avatar{
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+#avimg{
+  border-radius: 720px;
+  border-color: var(--acc);
+  border-width: 30px;
+}
 #traits{
   color: var(--acc);
   text-align: center;
