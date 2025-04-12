@@ -1,13 +1,11 @@
 :root{
   --bg:#0f172a;
-  --tbar: #1e40af;
-  --acc:#2563eb;
+  --tbar: #1e293b;
+  --acc:#67e8f9;
+  --tit:#2563eb;
   --txt:#f8fafc;
-  --sect:#64748b;
-}
-#titlebar{
-  background-color: var(--tbar);
-  float: fixed;
+  --sect:#1e293b;
+  --hligt:#22c55e;
 }
 #logo{
   height:100px;
@@ -28,24 +26,30 @@
 #traits{
   color: var(--acc);
   text-align: center;
+  font-family: "Space Mono";
 }
 #titlebar{
   display: grid;
   grid-template-columns: 60% 10% 10% 10% 10%;
   height: 100px;
+  background-color: var(--tbar);
+  float: fixed;
 }
 .titcon{
   align-self: center;
   font-family: "Source Code Pro";
+  color: var(--acc);
 }
 h1{
-  color: var(--sect);
+  color: var(--tit);
   font-family: "Space Mono";
   font-size: 60px;
   text-align: center;
 }
 #am{
   font-size: 40px;
+  font-family:"Jetbrains Mono"; 
+  color: var(--acc);
 }
 #bio{
   display: grid;
