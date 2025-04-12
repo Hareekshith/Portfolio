@@ -9,15 +9,21 @@
   background-color: var(--tbar);
   float: fixed;
 }
+#logo{
+  height:100px;
+  margin-left: 20px;
+}
 #avatar{
   display: flex;
   height: 500px;
   justify-content: center;
+  padding: 30px;
 }
 #avimg{
+  height:550px;
   border-radius: 720px;
+  border: 5px solid;
   border-color: var(--acc);
-  border-width: 30px;
 }
 #traits{
   color: var(--acc);
@@ -36,16 +42,20 @@ h1{
   color: var(--sect);
   font-family: "Space Mono";
   font-size: 60px;
-  text-indent: 90px;
+  text-align: center;
 }
-#red{
-  color: var(--acc);
+#am{
+  font-size: 40px;
 }
 #bio{
   display: grid;
   grid-template-columns: 70% 30%;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 80px;
   place-items: center;
+  background-color: var(--sect);
+  border-radius: 30px;
 }
 #desc{
   margin-top: 40px;
@@ -55,9 +65,9 @@ h1{
   font-family: "Source Code Pro";
 }
 #pfp{
-  height:300px;
-  width:300px;
-  border-radius: 300px;
+  height:200px;
+  width:200px;
+  border-radius: 200px;
 }
 body{
   background-color: var(--bg);
