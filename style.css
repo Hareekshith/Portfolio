@@ -1,0 +1,54 @@
+:root{
+  --bg:#0f172a;
+  --tbar: #1e40af;
+  --acc:#2563eb;
+  --txt:#f8fafc;
+  --sect:#64748b;
+}
+#titlebar{
+  background-color: var(--tbar);
+  float: fixed;
+}
+#traits{
+  color: var(--acc);
+  text-align: center;
+}
+#titlebar{
+  display: grid;
+  grid-template-columns: 60% 10% 10% 10% 10%;
+  height: 100px;
+}
+.titcon{
+  align-self: center;
+  font-family: "Source Code Pro";
+}
+h1{
+  color: var(--sect);
+  font-family: "Space Mono";
+  font-size: 60px;
+  text-indent: 90px;
+}
+#red{
+  color: var(--acc);
+}
+#bio{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 80px;
+  place-items: center;
+}
+#desc{
+  margin-top: 40px;
+  color: var(--txt);
+  line-height: 40px;
+  text-align: center;
+  font-family: "Source Code Pro";
+}
+#pfp{
+  height:300px;
+  width:300px;
+  border-radius: 300px;
+}
+body{
+  background-color: var(--bg);
+}
