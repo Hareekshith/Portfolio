@@ -38,6 +38,11 @@
   align-self: center;
   font-family: "Source Code Pro";
   color: var(--acc);
+  text-decoration: none;
+  transition: font-size 0.3s ease;
+}
+.titcon:hover{
+  font-size: 20px;
 }
 h1{
   color: var(--tit);

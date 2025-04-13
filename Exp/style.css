@@ -1,0 +1,16 @@
+:root{
+  --bg:#0f172a;
+  --tbar: #1e293b;
+  --acc:#67e8f9;
+  --tit:#2563eb;
+  --txt:#f8fafc;
+  --sect:#1e293b;
+  --hligt:#22c55e;
+}
+body{
+  background-color: var(--bg);
+}
+.expit{
+  border-radius: 20px;
+  background-color: var(--sect);
+}
