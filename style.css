@@ -39,10 +39,11 @@
   font-family: "Source Code Pro";
   color: var(--acc);
   text-decoration: none;
-  transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;  
 }
 .titcon:hover{
   font-size: 20px;
+  filter: grayscale(0%) brightness(120%);
 }
 h1{
   color: var(--tit);
