@@ -1,0 +1,112 @@
+:root{
+  --bg:#0f172a;
+  --tbar: #1e293b;
+  --acc:#67e8f9;
+  --tit:#2563eb;
+  --txt:#f8fafc;
+  --sect:#1e293b;
+  --hligt:#60a5fa;
+}
+#logo{
+  height:100px;
+  margin-left: 20px;
+}
+#avatar{
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  padding: 30px;
+}
+#avimg{
+  height:550px;
+  border-radius: 720px;
+  border: 5px solid;
+  border-color: var(--acc);
+}
+#traits{
+  color: var(--acc);
+  text-align: center;
+  font-family: "Space Mono";
+  height: 40px;
+}
+#tr{
+  text-align: center;
+  color: var(--txt);
+  font-family: "Space Mono";
+}
+#titlebar{
+  display: grid;
+  grid-template-columns: 70% 10% 10% 10%;
+  height: 100px;
+  background-color: var(--tbar);
+}
+.titcon{
+  align-self: center;
+  font-family: "Source Code Pro";
+  color: var(--acc);
+  text-decoration: none;
+  transition: font-size 0.3s ease;  
+}
+.titcon:hover{
+  font-size: 20px;
+  filter: grayscale(0%) brightness(120%);
+}
+h1{
+  color: var(--tit);
+  font-family: "Space Mono";
+  font-size: 60px;
+  text-align: center;
+}
+#am{
+  font-size: 40px;
+  font-family:"Jetbrains Mono"; 
+  color: var(--acc);
+}
+#bio{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  place-items: center;
+  background-color: var(--sect);
+  border-radius: 30px;
+}
+#desc{
+  margin-top: 40px;
+  margin-left: 20px;
+  color: var(--txt);
+  line-height: 40px;
+  text-align: center;
+  font-family: "Source Code Pro";
+}
+#pfp{
+  height:200px;
+  width:200px;
+  border-radius: 200px;
+}
+body{
+  background-color: var(--bg);
+}
+#time{
+  margin-top: 60px;
+  background-color: var(--sect);
+  border-radius: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  padding: 30px;
+}
+.ti{
+  color: var(--txt);
+  font-family: "Space Mono";
+  padding: 40px;
+}
+#tite{
+  font-family: "Jetbrains Mono";
+  font-size: 30px;
+  color: var(--acc);
+}
+::selection{
+  background-color: var(--hligt);
+}
