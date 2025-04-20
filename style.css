@@ -110,3 +110,18 @@ body{
 ::selection{
   background-color: var(--hligt);
 }
+#exp{
+  background-color: var(--sect);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 200px 200px;
+  margin-top: 100px;
+}
+#tit{
+  color: var(--tit);
+  font-family: "Space Mono";
+  font-size: 60px;
+  text-align: center;
+  text-decoration: solid underline var(--hligt) 3px;
+}
