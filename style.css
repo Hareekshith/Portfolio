@@ -117,6 +117,9 @@ body{
   grid-template-columns: 33% 33% 34%;
   grid-template-rows: 200px 200px;
   margin-top: 100px;
+  margin-right: 40px;
+  margin-left: 40px;
+  place-items: center;
 }
 #tit{
   color: var(--tit);
