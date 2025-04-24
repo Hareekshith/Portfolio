@@ -128,3 +128,7 @@ body{
   text-align: center;
   text-decoration: solid underline var(--hligt) 3px;
 }
+.expit{
+  padding: 30px;
+  height: 100px;
+}
