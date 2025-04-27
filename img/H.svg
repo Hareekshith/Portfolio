@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    width="512"
    height="512"
@@ -24,9 +23,9 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
-     inkscape:zoom="1.5485297"
-     inkscape:cx="173.71317"
-     inkscape:cy="247.97716"
+     inkscape:zoom="1.2159441"
+     inkscape:cx="183.80779"
+     inkscape:cy="189.97584"
      inkscape:window-width="1896"
      inkscape:window-height="1027"
      inkscape:window-x="0"
@@ -36,6 +35,12 @@
      showguides="true" />
   <defs
      id="defs1">
+    <rect
+       x="36.163336"
+       y="5.8119647"
+       width="360.98759"
+       height="555.36552"
+       id="rect11" />
     <linearGradient
        id="linearGradient20"
        inkscape:swatch="gradient">
@@ -53,7 +58,7 @@
        xlink:href="#Camouflage"
        preserveAspectRatio="xMidYMid"
        id="pattern11"
-       patternTransform="scale(0.2)" />
+       patternTransform="matrix(0.32970165,0,0,0.32970165,-187.98768,-62.24755)" />
     <pattern
        inkscape:collect="always"
        patternUnits="userSpaceOnUse"
@@ -303,98 +308,145 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g7"
-       transform="matrix(1.3177014,0,0,1.585633,-77.858839,-126.09742)"
-       style="fill:#67e8f9;fill-opacity:1">
+       id="g11"
+       transform="translate(0,-16.448124)">
       <text
          xml:space="preserve"
-         style="font-weight:300;font-size:170.667px;font-family:'SFMono Nerd Font Mono';-inkscape-font-specification:'SFMono Nerd Font Mono Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;mix-blend-mode:lighten;fill:#67e8f9;fill-opacity:1;stroke:url(#pattern11)"
-         x="241.4202"
-         y="334.03397"
-         id="text1"><tspan
+         style="font-weight:300;font-size:281.345px;font-family:'SFMono Nerd Font Mono';-inkscape-font-specification:'SFMono Nerd Font Mono Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;mix-blend-mode:lighten;fill:#67e8f9;fill-opacity:1;stroke:url(#pattern11);stroke-width:1.64851"
+         x="209.9955"
+         y="488.41019"
+         id="text1"
+         transform="scale(1.0378123,0.96356537)"><tspan
            sodipodi:role="line"
            id="tspan1"
-           x="241.4202"
-           y="334.03397"
-           style="fill:#67e8f9;fill-opacity:1;stroke:url(#pattern11)" /></text>
+           x="209.9955"
+           y="488.41019"
+           style="fill:#67e8f9;fill-opacity:1;stroke:url(#pattern11);stroke-width:1.64851" /></text>
       <text
          xml:space="preserve"
-         style="font-weight:300;font-size:170.667px;font-family:'SFMono Nerd Font Mono';-inkscape-font-specification:'SFMono Nerd Font Mono Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0;fill:#67e8f9;fill-opacity:1;fill-rule:evenodd"
-         x="197.71481"
-         y="214.36449"
-         id="text23"><tspan
+         style="font-weight:300;font-size:281.345px;font-family:'SFMono Nerd Font Mono';-inkscape-font-specification:'SFMono Nerd Font Mono Light';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0;fill:#67e8f9;fill-opacity:1;fill-rule:evenodd;stroke-width:1.64851"
+         x="137.94682"
+         y="291.13406"
+         id="text23"
+         transform="scale(1.0378123,0.96356537)"><tspan
            sodipodi:role="line"
            id="tspan23"
-           x="197.71481"
-           y="214.36449" /></text>
+           x="137.94682"
+           y="291.13406"
+           style="stroke-width:1.64851" /></text>
       <text
          xml:space="preserve"
-         style="text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1"
-         x="207.08025"
-         y="380.86115"
-         id="text2"><tspan
+         style="font-size:19.7821px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:1.64851"
+         x="153.38582"
+         y="565.60516"
+         id="text2"
+         transform="scale(1.0378123,0.96356537)"><tspan
            sodipodi:role="line"
            id="tspan2"
-           x="207.08025"
-           y="380.86115" /></text>
+           x="153.38582"
+           y="565.60516"
+           style="stroke-width:1.64851" /></text>
       <text
          xml:space="preserve"
-         style="font-size:170.667px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1"
-         x="136.25238"
-         y="345.39978"
-         id="text3"><tspan
+         style="font-size:281.345px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:1.64851"
+         x="36.625484"
+         y="507.14685"
+         id="text3"
+         transform="scale(1.0378123,0.96356537)"><tspan
            sodipodi:role="line"
            id="tspan3"
-           x="136.25238"
-           y="345.39978" /></text>
+           x="36.625484"
+           y="507.14685"
+           style="stroke-width:1.64851" /></text>
       <text
          xml:space="preserve"
-         style="font-size:296.692px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;stroke-width:1.73842;fill-opacity:1"
-         x="-343.29883"
-         y="-139.61038"
+         style="font-size:489.099px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:2.8658"
+         x="82.97538"
+         y="504.6918"
          id="text4"
-         transform="matrix(-1.0408064,0.01181744,-0.01280351,-0.96064809,0,0)"><tspan
+         transform="matrix(1.0802622,7.4712438e-4,-0.0041786,0.92569831,0,0)"><tspan
            sodipodi:role="line"
            id="tspan4"
-           x="-343.29883"
-           y="-139.61038"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';stroke-width:1.73842;fill:#67e8f9;fill-opacity:1">A</tspan></text>
+           x="82.97538"
+           y="504.6918"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';fill:#67e8f9;fill-opacity:1;stroke-width:2.8658">A</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:266.492px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;stroke-width:1.56147;fill-opacity:1"
-         x="322.07346"
-         y="233.79984"
+         style="font-size:517.706px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:3.03342"
+         x="60.273575"
+         y="535.64319"
+         id="text4-4"
+         transform="matrix(1.0592123,7.6197319e-4,-0.00409718,0.94409488,0,0)"><tspan
+           sodipodi:role="line"
+           id="tspan4-7"
+           x="60.273575"
+           y="535.64319"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';fill:#67e8f9;fill-opacity:1;stroke-width:3.03342">H</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:384.213px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:2.25124"
+         x="-262.33154"
+         y="310.76407"
          id="text5"
-         transform="matrix(0.99370092,0.28767256,-0.32979065,0.9108659,0,0)"><tspan
+         transform="matrix(-0.02104001,-0.73632508,1.3580309,-0.00227011,0,0)"><tspan
            sodipodi:role="line"
            id="tspan5"
-           x="322.07346"
-           y="233.79984"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';stroke-width:1.56147;fill:#67e8f9;fill-opacity:1">R</tspan></text>
+           x="-262.33154"
+           y="310.76407"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';fill:#67e8f9;fill-opacity:1;stroke-width:2.25124">R</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:400.053px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;stroke-width:2.34405;fill-opacity:1"
-         x="302.65921"
-         y="-105.51154"
+         style="font-size:659.491px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:3.86419"
+         x="82.067093"
+         y="-6.6319218"
          id="text6"
-         transform="matrix(0.00557326,0.97766216,-1.0228179,0.0053272,0,0)"><tspan
+         transform="matrix(0.005784,0.94204132,-1.0614931,0.0051331,0,0)"><tspan
            sodipodi:role="line"
            id="tspan6"
-           x="302.65921"
-           y="-105.51154"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';stroke-width:2.34405;fill:#67e8f9;fill-opacity:1">I</tspan></text>
+           x="82.067093"
+           y="-6.6319218"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';fill:#67e8f9;fill-opacity:1;stroke-width:3.86419">I</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:238.185px;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:1.39561"
-         x="-25.514051"
-         y="375.63763"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:346.789px;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:2.03195"
+         x="782.026"
+         y="379.14142"
          id="text7"
-         transform="matrix(0.98251303,-0.33076835,0.36504287,0.89490454,0,0)"><tspan
+         transform="matrix(0.96181024,-0.0243004,-0.03350463,1.0405526,0,0)"><tspan
            sodipodi:role="line"
            id="tspan7"
-           x="-25.514051"
-           y="375.63763"
-           style="stroke-width:1.39561;fill:#67e8f9;fill-opacity:1">H</tspan></text>
+           x="782.026"
+           y="379.14142"
+           style="fill:#67e8f9;fill-opacity:1;stroke-width:2.03195" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:194.639px;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0;fill:#aae819;fill-opacity:1;fill-rule:evenodd;stroke:#67e8f9;stroke-width:1.14046"
+         x="-226.18938"
+         y="167.58624"
+         id="text8"
+         transform="scale(1.138444,0.87839192)"><tspan
+           sodipodi:role="line"
+           id="tspan8"
+           style="stroke-width:1.14046"
+           x="-226.18938"
+           y="167.58624" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:194.639px;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0;fill:#aae819;fill-opacity:1;fill-rule:evenodd;stroke:#67e8f9;stroke-width:1.14046"
+         x="-112.77128"
+         y="63.742367"
+         id="text9"
+         transform="scale(1.138444,0.87839192)"><tspan
+           sodipodi:role="line"
+           id="tspan9"
+           style="stroke-width:1.14046"
+           x="-112.77128"
+           y="63.742367" /></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(1.2983534,0,0,1.0017736,-94.007644,66.341489)"
+         id="text11"
+         style="font-size:170.667px;font-family:'SF Pro Rounded';-inkscape-font-specification:'SF Pro Rounded';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect11);opacity:0;fill:#ffdd55;fill-opacity:1;fill-rule:evenodd;stroke:#67e8f9" />
     </g>
   </g>
 </svg>

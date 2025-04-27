@@ -158,3 +158,20 @@ body{
   margin: 0;
   padding: 0;
 }
+#proj{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  place-items: center;
+  gap: 100px;
+}
+.proji{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sect);
+  padding: 70px;
+  border-radius: 10px;
+  height: 400px;
+  justify-content: center;
+}
