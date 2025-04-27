@@ -172,6 +172,14 @@ body{
   background-color: var(--sect);
   padding: 70px;
   border-radius: 10px;
-  height: 400px;
+  height: 300px;
   justify-content: center;
+}
+.logtit a:link,
+.logtit a:visited{
+  color: var(--tit);
+  text-decoration: none;
+}
+.logtit a:hover{
+  color: var(--acc);
 }
