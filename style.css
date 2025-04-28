@@ -183,3 +183,26 @@ body{
 .logtit a:hover{
   color: var(--acc);
 }
+.link{
+  display: flex;
+  background-color: var(--sect);
+  height: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jetbrains Mono";
+  transition: cubic-bezier(.4,0,.2,1) 0.4s;
+  color: var(--txt);
+  border-radius: 10px;
+}
+.link:hover{
+  background-color: var(--acc);
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.link a:link,
+.link a:visited{
+  color: var(--txt);
+  text-decoration: none;
+}
