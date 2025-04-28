@@ -6,6 +6,8 @@
   --txt:#f8fafc;
   --sect:#1e293b;
   --hligt:#60a5fa;
+  --ftit: "Space Mono";
+  --fpar: "Jetbrains Mono";
 }
 #logo{
   height:100px;
@@ -26,13 +28,13 @@
 #traits{
   color: var(--acc);
   text-align: center;
-  font-family: "Space Mono";
+  font-family: var(--ftit);
   height: 40px;
 }
 #tr{
   text-align: center;
   color: var(--txt);
-  font-family: "Space Mono";
+  font-family: var(--ftit);
 }
 #titlebar{
   display: grid;
@@ -42,7 +44,7 @@
 }
 .titcon{
   align-self: center;
-  font-family: "Source Code Pro";
+  font-family: var(--fpar);
   color: var(--acc);
   text-decoration: none;
   transition: font-size 0.3s ease;  
@@ -53,13 +55,13 @@
 }
 h1{
   color: var(--tit);
-  font-family: "Space Mono";
+  font-family: var(--ftit);
   font-size: 60px;
   text-align: center;
 }
 #am{
   font-size: 40px;
-  font-family:"Jetbrains Mono"; 
+  font-family:var(--fpar); 
   color: var(--acc);
 }
 #bio{
@@ -99,11 +101,11 @@ body{
 }
 .ti{
   color: var(--txt);
-  font-family: "Space Mono";
+  font-family: var(--ftit);
   padding: 40px;
 }
 #tite{
-  font-family: "Jetbrains Mono";
+  font-family: var(--fpar);
   font-size: 30px;
   color: var(--acc);
 }
@@ -125,7 +127,7 @@ body{
 }
 #tit{
   color: var(--tit);
-  font-family: "Space Mono";
+  font-family: var(--ftit);
   font-size: 60px;
   text-align: center;
   text-decoration: solid underline var(--hligt) 3px;
@@ -147,12 +149,12 @@ body{
   justify-content: center;
 }
 .logtit{
-  font-family: "Space Mono";
+  font-family: var(--ftit);
   text-align: center;
   color: var(--tit);
 }
 .logpara{
-  font-family: "Jetbrains Mono";
+  font-family: var(--fpar);
   text-align: center;
   color: var(--txt);
   margin: 0;
@@ -187,19 +189,22 @@ body{
   display: flex;
   background-color: var(--sect);
   height: 80px;
+  margin: 30px;
   margin-left: 100px;
   margin-right: 100px;
   align-items: center;
   justify-content: center;
-  font-family: "Jetbrains Mono";
-  transition: cubic-bezier(.4,0,.2,1) 0.4s;
+  font-family: var(--fpar);
+  transition: cubic-bezier(.4,0,.2,1) 0.3s;
   color: var(--txt);
   border-radius: 10px;
+  gap: 100px;
 }
 .link:hover{
   background-color: var(--acc);
   margin-left: 22px;
   margin-right: 22px;
+  font-size: 120%;
 }
 .link a:link,
 .link a:visited{
