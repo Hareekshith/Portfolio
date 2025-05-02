@@ -33,7 +33,7 @@
       <span id="tite">Time-Line</span>
       <ul>
         {% for entry in ent %}
-        <li style=""><h2 style="font-family: var(--ftit); color: var(--tit)">{{entry.title}}</h2> 
+        <li style="list-style: circle; color: var(--acc);"><h2 style="font-family: var(--ftit); color: var(--tit)">{{entry.title}}</h2> 
           <h4 style="font-family: var(--fpar); color:var(--acc)">{{entry.time}}</h4> 
           <p style="color:var(--txt); font-family: var(--fpar)">{{entry.desc}}<p></li>
         {% endfor %}
