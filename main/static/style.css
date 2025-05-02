@@ -15,7 +15,7 @@
 }
 #avatar{
   display: flex;
-  height: 500px;
+  height: auto;
   justify-content: center;
   padding: 30px;
 }
@@ -36,10 +36,15 @@
   color: var(--txt);
   font-family: var(--ftit);
 }
+#dd{
+  visibility: hidden;
+  height: 2em;
+}
 #titlebar{
   display: grid;
   grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
   height: 5rem;
+  width: 100vw;
   gap: 40px;
 }
 .titcon{
@@ -105,13 +110,8 @@ body{
   margin-top: 80px;
   padding: 30px;
 }
-.ti{
-  color: var(--txt);
-  font-family: var(--ftit);
-  padding: 40px;
-}
 #tite{
-  font-family: var(--fpar);
+  font-family: var(--ftit);
   font-size: 30px;
   color: var(--acc);
 }
@@ -217,4 +217,91 @@ body{
   color: var(--txt);
   text-decoration: none;
 }
-
+@media screen and (orientation: portrait) and (max-width: 600px){
+  #titlebar{
+    display: grid;
+    grid-template-columns: 9fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    height: 5rem;
+    width: 99vw;
+    position: relative;
+  }
+  .titcon{
+    visibility: hidden;
+    font-size: 0;
+  }
+  #dd{
+    visibility: visible;
+    margin-right: 20px;
+    height: 4em;
+  }
+  #avatar{
+    height: auto;
+  }
+  #avimg{
+    height: 250px;
+  }
+  h1{
+    color: var(--tit);
+    font-family: var(--ftit);
+    font-size: 40px;
+    text-align: center;
+  }
+  html,body{
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  #bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #traits{
+    color: var(--acc);
+    text-align: center;
+    font-family: var(--ftit);
+    height: 20px;
+  }
+  #tr{
+    text-align: center;
+    color: var(--txt);
+    font-family: var(--ftit);
+    font-size: 1rem;
+  }
+  #am{
+    font-size: 2rem;
+    font-family:var(--ftit); 
+    color: var(--acc);
+  }
+  #desc{
+    margin-top: 20px;
+    color: var(--txt);
+    line-height: 40px;
+    text-align: center;
+    font-family: var(--fpar);
+    font-size: 0.75em;
+  }
+  #pfp{
+    height: 12em;
+    width: 12em;
+    border-radius: 32em;
+  }
+  #time{
+    margin-top: 60px;
+    background-color: var(--sect);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 80px;
+    padding: 10px;
+  }
+  #time ul h1{
+    font-size: 2em;
+  }
+  #time ul p,h4{
+    font-size: 0.8em;
+  }
+}

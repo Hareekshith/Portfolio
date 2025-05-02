@@ -18,6 +18,7 @@
       <a class="titcon" href="{% url 'home' %}">Home</a>
       <a class="titcon" href="{% url 'exp' %}">Experience</a>
       <a class="titcon" href="{% url 'soc' %}">Socials</a>
+      <img id="dd" src="{% static 'img/tl.svg' %}" alt="ddbox">
     </div>
     <div id="avatar">
       <img id="avimg" src="{% static 'img/avatar.png' %}" alt="avatar">
@@ -30,7 +31,7 @@
       <img id="pfp" src="{% static 'img/pfp.jpg' %}" alt="nicepic">
     </div>
     <div id="time">
-      <span id="tite">Time-Line</span>
+      <h2 id="tite">Time-Line</h2>
       <ul>
         {% for entry in ent %}
         <li style="list-style: circle; color: var(--acc);"><h2 style="font-family: var(--ftit); color: var(--tit)">{{entry.title}}</h2> 
