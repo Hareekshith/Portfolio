@@ -9,7 +9,7 @@ db = cl["time_line"]
 coll = db["timenux"]
 
 def home(request):
-    ent = list(coll.find().sort("_id",-1))
+    ent = list(coll.find().sort("_id",-1))[:3]
     return render(request,"main/index.html",{"ent":ent})
 
 def exp(request):
