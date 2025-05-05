@@ -9,6 +9,9 @@
   --ftit: "Space Mono";
   --fpar: "Jetbrains Mono";
 }
+#ddc{
+  display: none;
+}
 #logo{
   height:4em;
   margin-left: 20px;
@@ -68,7 +71,7 @@
 h1{
   color: var(--tit);
   font-family: var(--ftit);
-  font-size: 1em;
+  font-size: 3em;
   text-align: center;
 }
 #am{
