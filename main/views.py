@@ -17,3 +17,7 @@ def exp(request):
 
 def soc(request):
     return render(request,"main/soc.html")
+
+def tl(request):
+    ent = list(coll.find().sort("_id",-1))
+    return render(request, "main/tl.html",{"ent":ent})

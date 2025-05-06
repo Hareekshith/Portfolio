@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hareekshith</title>
+    <title>Timeline</title>
     {% load static %}
-    <link rel="icon" type="img/xml+svg" href="{% static 'img/H.svg' %}">
     <link href="{% static 'style.css' %}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  </head> 
+
+  </head>
   <body>
     <div id="titlebar">
       <nav>
@@ -26,29 +26,16 @@
         <a class="titcon" href="{% url 'soc' %}">Socials</a>
       </div>
       </nav>
-    </div>
-    <div id="avatar">
-      <img id="avimg" src="{% static 'img/avatar.png' %}" alt="avatar">
-    </div>
-    <h1>Hareekshith</h1>
-    <h3 id="tr">I love to <span id="traits"></span></h3>
-    <div id="bio">
-      <p id="desc"> <span id="am">About Me</span> <br> <br> Hello, I am a novice programmer! I'm a passionate and curious developer with a solid foundation in programming languages including Java, C, C++, and Python. On the front-end side, I have a working knowledge of HTML and CSS, which I’m continuously improving as I build and design new projects. Currently, I'm pursuing a course in Cyber Security, where I'm diving deeper into the principles of digital protection, ethical hacking, and network security. I'm driven by a desire to build secure and efficient systems while expanding my skills across both development and security domains.
-      </p>
-      <img id="pfp" src="{% static 'img/pfp.jpg' %}" alt="nicepic">
-    </div>
+    </div> 
+    <h1 id="tit" >Timeline</h1>
     <div id="time">
-      <h2 id="tite" style="text-align: center;">Timeline</h2>
       <ul>
         {% for entry in ent %}
         <li style="list-style: circle; color: var(--acc);"><h2 style="font-family: var(--ftit); color: var(--tit)">{{entry.title}}</h2> 
           <h4 style="font-family: var(--fpar); color:var(--acc)">{{entry.time}}</h4> 
           <p style="color:var(--txt); font-family: var(--fpar)">{{entry.desc}}<p></li>
         {% endfor %}
-        <a id="rm" href="{% url 'tl' %}" style="display: flex;width: 8em; height: 2em; background-color: #1e40af; text-decoration: none; color: var(--txt); font-family: var(--fpar); border-radius: 0.7em; justify-content: center; align-items: center;">Read More</a>
       </ul>
-             
-    </div><script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="{% static 'script.js' %}" defer></script>
+    </div>
   </body>
 </html>

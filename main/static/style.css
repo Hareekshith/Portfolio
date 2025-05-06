@@ -6,6 +6,7 @@
   --txt:#f8fafc;
   --sect:#1e293b;
   --hligt:#60a5fa;
+  --btn: #1e40af;
   --ftit: "Space Mono";
   --fpar: "Jetbrains Mono";
 }
@@ -43,7 +44,7 @@
   visibility: hidden;
   height: 2em;
 }
-#titlebar{
+#titlebar nav{
   display: grid;
   grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
   height: 5rem;
@@ -55,8 +56,8 @@
   justify-content: center;
   align-self: center;
   font-family: var(--fpar);
-  background-color: var(--sect);
-  color: var(--acc);
+  background-color: var(--btn);
+  color: var(--txt);
   border-radius: 10px;
   text-decoration: none;
   transition: cubic-bezier(.4,0,.2,1) 0.3s;  
@@ -88,7 +89,6 @@ h1{
   place-items: center;
   background-color: var(--sect);
   border-radius: 30px;
-  box-shadow: seashell;
 }
 #desc{
   margin-top: 40px;
@@ -107,6 +107,10 @@ body{
   background-color: var(--bg);
 }
 #time{
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
   background-color: var(--sect);
   border-radius: 30px;
@@ -303,6 +307,8 @@ body{
     border-radius: 32em;
   }
   #time{
+    display: flex;
+    flex-direction: column;
     margin-top: 60px;
     background-color: var(--sect);
     border-radius: 30px;
@@ -365,5 +371,8 @@ body{
   }
   .link a{
     margin: 0 auto;
+  }
+  #time ul a{
+    font-size: 0.7em !important;
   }
 }
