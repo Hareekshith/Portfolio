@@ -19,11 +19,13 @@
       <a class="titcon" href="{% url 'home' %}">Home</a>
       <a class="titcon" href="{% url 'exp' %}">Experience</a>
       <a class="titcon" href="{% url 'soc' %}">Socials</a>
-      <img id="dd" src="{% static 'img/tl.svg' %}" alt="ddbox"> 
-      <div id="ddc">
-        <a class="titcon" href="{% url 'home' %}">Home</a>
-        <a class="titcon" href="{% url 'exp' %}">Experience</a>
-        <a class="titcon" href="{% url 'soc' %}">Socials</a>
+      <div class="ddc">
+        <button><img id="dd" src="{% static 'img/tl.svg' %}" alt="ddbox"></button>
+        <div class="mtitcon">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'exp' %}">Experience</a>
+        <a href="{% url 'soc' %}">Socials</a>
+        </div>
       </div>
       </nav>
     </div> 

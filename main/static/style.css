@@ -10,6 +10,12 @@
   --ftit: "Space Mono";
   --fpar: "Jetbrains Mono";
 }
+button{
+  visibility: hidden;
+}
+.mtitcon{
+  display: none;
+}
 #ddc{
   display: none;
 }
@@ -234,9 +240,8 @@ body{
 @media screen and (orientation: portrait) and (max-width: 850px){
   #titlebar{
     display: grid;
-    grid-template-columns: 9fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 4fr 2fr 2fr 2fr 4fr;
     height: 5rem;
-    position: relative;
   }
   #logo{
     height: 3.14em;
@@ -245,6 +250,41 @@ body{
   .titcon{
     visibility: hidden;
     font-size: 0;
+  }
+  .ddc button{
+    background-color: var(--bg);
+    border: none;
+  }
+  .ddc{
+    position: relative;
+    display: inline-block;
+  }
+  .mtitcon{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--btn);
+    flex-direction: column;
+    border-width: 2px;
+    padding: 20px;
+    width: max-content;
+    max-width: 150px;
+  }
+  .mtitcon a{
+    display: block;
+    text-align: right;
+    color: var(--acc);
+    text-decoration: none;
+    font-family: var(--fpar);
+    margin: 5px 0;
+  }
+  .ddc:hover .mtitcon{
+    display: flex;
+    transition: cubic-bezier(.4,0,.2,1) 0.3s;
+  }
+  .mtitcon a:visited{
+    text-decoration: var(--acc);
   }
   #dd{
     visibility: visible;
