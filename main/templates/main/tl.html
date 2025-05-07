@@ -13,7 +13,7 @@
 
   </head>
   <body>
-    <div id="titlebar">
+    <div id="titlebar" style:"margin-top: 20px">
       <nav>
       <img id="logo" src="{% static 'img/H.svg' %}" alt="logo.svg">
       <a class="titcon" href="{% url 'home' %}">Home</a>
@@ -31,7 +31,7 @@
     </div> 
     <h1 id="tit" >Timeline</h1>
     <div id="time">
-      <ul>
+      <ul style="grid-column-start: 1; grid-column-end:3">
         {% for entry in ent %}
         <li style="list-style: circle; color: var(--acc);"><h2 style="font-family: var(--ftit); color: var(--tit)">{{entry.title}}</h2> 
           <h4 style="font-family: var(--fpar); color:var(--acc)">{{entry.time}}</h4> 

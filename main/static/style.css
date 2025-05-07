@@ -14,10 +14,10 @@ button{
   visibility: hidden;
 }
 .mtitcon{
-  display: none;
+  visibility: hidden;
 }
 #ddc{
-  display: none;
+  visibility: hidden;
 }
 #logo{
   height:4em;
@@ -88,7 +88,7 @@ h1{
 }
 #bio{
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 8fr 2fr;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 80px;
@@ -97,20 +97,28 @@ h1{
   border-radius: 30px;
 }
 #desc{
+  grid-column-start: 1;
+  grid-column-end: 2;
   margin-top: 40px;
   margin-left: 20px;
   color: var(--txt);
   line-height: 40px;
-  text-align: center;
+  text-align: justify;
   font-family: var(--fpar);
 }
 #pfp{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
   height:200px;
   width:200px;
   border-radius: 200px;
 }
 body{
   background-color: var(--bg);
+  margin: 0;
+  padding: 0;
 }
 #time{
   display: grid;
@@ -221,7 +229,7 @@ body{
   gap: 100px;
 }
 .link:hover{
-  background-color: var(--acc);
+  background-color: var(--btn);
   margin-left: 22px;
   margin-right: 22px;
   font-size: 120%;
@@ -256,35 +264,47 @@ body{
     border: none;
   }
   .ddc{
+    opacity: 80%;
     position: relative;
     display: inline-block;
   }
   .mtitcon{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--btn);
+    background-color: var(--bg);
+    border-radius: 10px;
     flex-direction: column;
     border-width: 2px;
     padding: 20px;
-    width: max-content;
-    max-width: 150px;
+    width: 300px;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
   .mtitcon a{
     display: block;
-    text-align: right;
+    text-align: left;
     color: var(--acc);
     text-decoration: none;
     font-family: var(--fpar);
     margin: 5px 0;
+    padding: 10px 15px;
+    transition: cubic-bezier(.4,0,.2,1) 0.3s;  
+
   }
   .ddc:hover .mtitcon{
-    display: flex;
-    transition: cubic-bezier(.4,0,.2,1) 0.3s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); 
   }
   .mtitcon a:visited{
     text-decoration: var(--acc);
+  }
+  .mtitcon a:hover{
+    text-decoration: underline;
+    font-size: 2.3em;
   }
   #dd{
     visibility: visible;
@@ -336,14 +356,17 @@ body{
     font-size: 2rem;
     font-family:var(--ftit); 
     color: var(--acc);
+    padding: 0;
+    text-align: center;
   }
   #desc{
+    margin: 0;
     margin-top: 20px;
     color: var(--txt);
-    line-height: 40px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--fpar);
     font-size: 0.75em;
+    padding: 20px;
   }
   #pfp{
     height: 12em;
