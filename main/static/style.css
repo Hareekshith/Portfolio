@@ -304,8 +304,12 @@ body{
     text-align: center;
   }
   html,body{
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 0;
     box-sizing: border-box;
   }
   #bio{
