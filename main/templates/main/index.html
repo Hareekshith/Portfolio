@@ -42,14 +42,14 @@
       </p>
     </div>
     <div id="time" style="margin-bottom: 20px">
-      <h2 id="tite" style="text-align: center;">Timeline</h2>
+      <h2 id="am" style="text-align: center;">Timeline</h2>
       <ul>
         {% for entry in ent %}
         <li style="list-style: circle; color: var(--acc);"><h2 style="font-family: var(--ftit); color: var(--tit)">{{entry.title}}</h2> 
           <h4 style="font-family: var(--fpar); color:var(--acc)">{{entry.time}}</h4> 
           <p style="color:var(--txt); font-family: var(--fpar)">{{entry.desc}}<p></li>
         {% endfor %}
-        <a id="rm" href="{% url 'tl' %}" style="display: flex;width: 8em; height: 2em; background-color: #1e40af; text-decoration: none; color: var(--txt); font-family: var(--fpar); border-radius: 0.7em; justify-content: center; align-items: center;">Read More</a>
+        <a id="rm" href="{% url 'tl' %}" style="display: flex;width: 8em; height: 2em; background-color: var(--btn); text-decoration: none; color: var(--txt); font-family: var(--fpar); border-radius: 0.7em; justify-content: center; align-items: center;">Read More</a>
       </ul>
              
     </div><script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

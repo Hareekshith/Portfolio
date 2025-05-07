@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Timeline</title>
     {% load static %}
+    <link rel="icon" type="img/xml+svg" href="{% static 'img/H.svg' %}">
     <link href="{% static 'style.css' %}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
 
   </head>
   <body>
-    <div id="titlebar" style:"margin-top: 20px">
+    <div id="titlebar" style:"margin-top: 20px;">
       <nav>
       <img id="logo" src="{% static 'img/H.svg' %}" alt="logo.svg">
       <a class="titcon" href="{% url 'home' %}">Home</a>

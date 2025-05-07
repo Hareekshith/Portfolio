@@ -115,6 +115,10 @@ h1{
   width:200px;
   border-radius: 200px;
 }
+#rm:hover{
+  filter: grayscale(12%) brightness(120%);
+  font-size: 4em;
+}
 body{
   background-color: var(--bg);
   margin: 0;
@@ -236,9 +240,11 @@ body{
 }
 .link a{
   display: flex;
+  margin: 0 auto;
+  height: 80px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 .link a:link,
 .link a:visited{
@@ -276,7 +282,8 @@ body{
     right: 0;
     background-color: var(--bg);
     border-radius: 10px;
-    flex-direction: column;
+    align-items:center;
+    flex-direction: column ;
     border-width: 2px;
     padding: 20px;
     width: 300px;
@@ -292,7 +299,6 @@ body{
     margin: 5px 0;
     padding: 10px 15px;
     transition: cubic-bezier(.4,0,.2,1) 0.3s;  
-
   }
   .ddc:hover .mtitcon{
     opacity: 1;
@@ -303,8 +309,7 @@ body{
     text-decoration: var(--acc);
   }
   .mtitcon a:hover{
-    text-decoration: underline;
-    font-size: 2.3em;
+    font-size: 1.2em;
   }
   #dd{
     visibility: visible;
@@ -430,14 +435,11 @@ body{
     margin-left: 10px !important;
   }
   .link{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 1px;
     margin-left: 40px;
     margin-right: 40px;
-  }
-  #div{
-    width: 100vw;
-  }
-  .link a{
-    margin: 0 auto;
   }
   #time ul a{
     font-size: 0.7em !important;
