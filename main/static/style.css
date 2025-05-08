@@ -117,7 +117,6 @@ h1{
 }
 #rm:hover{
   filter: grayscale(12%) brightness(120%);
-  font-size: 4em;
 }
 body{
   background-color: var(--bg);

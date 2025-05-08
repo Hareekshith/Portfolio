@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="512"
-   height="512"
+   width="100%"
+   height="auto"
    viewBox="0 0 512 512"
    version="1.1"
    id="svg1"
@@ -13,104 +13,83 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#505050"
-     bordercolor="#ffffff"
-     borderopacity="1"
-     inkscape:showpageshadow="0"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="1"
-     inkscape:deskcolor="#505050"
-     inkscape:document-units="px"
-     inkscape:zoom="1.4185323"
-     inkscape:cx="155.79483"
-     inkscape:cy="225.58528"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3151207"
+     inkscape:cx="95.04831"
+     inkscape:cy="215.94976"
      inkscape:window-width="1896"
      inkscape:window-height="1027"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     showguides="true" />
-  <defs
-     id="defs1">
-    <rect
-       x="36.163336"
-       y="5.8119647"
-       width="360.98759"
-       height="555.36552"
-       id="rect11" />
-    <linearGradient
-       id="linearGradient20"
-       inkscape:swatch="gradient">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop20" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:0;"
-         offset="1"
-         id="stop21" />
-    </linearGradient>
-  </defs>
+     inkscape:current-layer="g38" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-size:192px;font-family:'Material Design Icons Desktop';-inkscape-font-specification:'Material Design Icons Desktop';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9"
-       x="-211.48621"
-       y="141.69576"
-       id="text5"><tspan
-         sodipodi:role="line"
-         id="tspan5"
-         x="-211.48621"
-         y="141.69576">hfhgjsglkfhdjjf</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:266.667px;font-family:'Material Design Icons Desktop';-inkscape-font-specification:'Material Design Icons Desktop';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9"
-       x="74.020164"
-       y="236.86455"
-       id="text9"><tspan
-         sodipodi:role="line"
-         id="tspan9"
-         x="74.020164"
-         y="236.86455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font'">H</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:266.667px;font-family:'Material Design Icons Desktop';-inkscape-font-specification:'Material Design Icons Desktop';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9"
-       x="241.79922"
-       y="238.27446"
-       id="text10"><tspan
-         sodipodi:role="line"
-         id="tspan10"
-         x="241.79922"
-         y="238.27446"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font'">A</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:266.667px;font-family:'Material Design Icons Desktop';-inkscape-font-specification:'Material Design Icons Desktop';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9"
-       x="89.529175"
-       y="463.85971"
-       id="text11"><tspan
-         sodipodi:role="line"
-         id="tspan11"
-         x="89.529175"
-         y="463.85971"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font'">R</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:266.667px;font-family:'Material Design Icons Desktop';-inkscape-font-specification:'Material Design Icons Desktop';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9"
-       x="235.45462"
-       y="469.49936"
-       id="text12"><tspan
-         sodipodi:role="line"
-         id="tspan12"
-         x="235.45462"
-         y="469.49936"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:266.667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font'">I</tspan></text>
+    <g
+       id="g38"
+       transform="translate(-6.8434784,-12.92657)">
+      <g
+         id="g2"
+         transform="matrix(1.1848697,0,0,1.1812093,-46.195816,-58.02149)">
+        <rect
+           style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.763443"
+           id="rect1"
+           width="275.60852"
+           height="42.485107"
+           x="122.65182"
+           y="-94.93969"
+           transform="rotate(90)" />
+        <rect
+           style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.527602"
+           id="rect1-3"
+           width="131.62956"
+           height="42.485107"
+           x="-184.9234"
+           y="-286.53268"
+           transform="scale(-1)" />
+        <rect
+           style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.439475"
+           id="rect1-3-2"
+           width="91.329079"
+           height="42.485107"
+           x="-290.15891"
+           y="-287.98373"
+           transform="scale(-1)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:361.507px;font-family:'JetBrainsMono Nerd Font', B;-inkscape-font-specification:'JetBrainsMono Nerd Font, B';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565"
+           x="252.14357"
+           y="402.57077"
+           id="text1"
+           transform="scale(1.0746784,0.93051094)"><tspan
+             sodipodi:role="line"
+             id="tspan1"
+             x="252.14357"
+             y="402.57077"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'JetBrainsMono Nerd Font', B;-inkscape-font-specification:'JetBrainsMono Nerd Font, B';fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565">S</tspan></text>
+        <path
+           id="rect2"
+           style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.08858"
+           d="m 195.68885,77.628811 56.2844,-0.816648 -73.65611,394.440827 h -54.19978 z"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           id="rect2-3"
+           style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.03134"
+           d="m 286.5811,77.098265 -57.8498,-0.05411 75.36891,346.000725 h 55.46014 z"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+    </g>
   </g>
 </svg>
