@@ -250,7 +250,7 @@ body{
   color: var(--txt);
   text-decoration: none;
 }
-@media screen and (orientation: portrait) and (max-width: 850px){
+@media screen and (orientation: portrait) and (max-width: 920px){
   #titlebar{
     display: grid;
     grid-template-columns: 4fr 2fr 2fr 2fr 4fr;
