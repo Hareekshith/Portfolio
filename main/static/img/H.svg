@@ -8,46 +8,13 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
-   sodipodi:docname="H.svg"
+   sodipodi:docname="h.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1">
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#pattern6-7"
-       preserveAspectRatio="xMidYMid"
-       id="pattern6"
-       patternTransform="translate(190,350)" />
-    <pattern
-       patternUnits="userSpaceOnUse"
-       width="29"
-       height="20"
-       patternTransform="translate(190,350)"
-       preserveAspectRatio="xMidYMid"
-       style="fill:#000000"
-       id="pattern6-7"
-       inkscape:label="Abstract 1"
-       inkscape:collect="always"
-       inkscape:isstock="true">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-dasharray:none;paint-order:stroke markers fill;stop-color:#000000"
-         d="M 0,5 C 19,5 10,15 29,15"
-         id="path4-2"
-         sodipodi:nodetypes="cc" />
-    </pattern>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath54">
-      <path
-         id="path54"
-         style="stroke-width:0.0999999;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
-         d="m 1691.1994,-792.32001 h 1634.8919 v 92.82806 H 1691.1994 Z" />
-    </clipPath>
-  </defs>
+     id="defs1" />
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
@@ -57,15 +24,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.3843025"
-     inkscape:cx="284.98107"
-     inkscape:cy="224.66188"
+     inkscape:zoom="1.3151207"
+     inkscape:cx="118.62029"
+     inkscape:cy="244.84445"
      inkscape:window-width="1896"
      inkscape:window-height="1027"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g38" />
+     inkscape:current-layer="layer1" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -74,63 +41,51 @@
        id="g38"
        transform="translate(-6.8434784,-12.92657)">
       <rect
-         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.933729"
+         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.763443"
          id="rect1"
-         width="347.94531"
-         height="50.339317"
-         x="65.184418"
-         y="-61.238651"
+         width="275.60852"
+         height="42.485107"
+         x="122.65182"
+         y="-69.086548"
          transform="rotate(90)" />
       <rect
-         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.624173"
+         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.527602"
          id="rect1-3"
-         width="155.96388"
-         height="50.183804"
-         x="-167.85762"
-         y="-281.15598"
+         width="131.62956"
+         height="42.485107"
+         x="-159.07027"
+         y="-286.53268"
          transform="scale(-1)" />
       <rect
-         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.519916"
+         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:0.551446"
          id="rect1-3-2"
-         width="108.21306"
-         height="50.183804"
-         x="-292.54797"
-         y="-282.86996"
+         width="143.79575"
+         height="42.485107"
+         x="-316.77243"
+         y="-287.98373"
          transform="scale(-1)" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:427.677px;font-family:'JetBrainsMono Nerd Font', B;-inkscape-font-specification:'JetBrainsMono Nerd Font, B';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.60379"
-         x="250.67815"
-         y="414.5831"
+         style="font-size:361.507px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565"
+         x="274.7851"
+         y="395.21622"
          id="text1"
-         transform="scale(1.0763422,0.92907254)"><tspan
+         transform="scale(1.0746784,0.93051094)"><tspan
            sodipodi:role="line"
            id="tspan1"
-           x="250.67815"
-           y="414.5831"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'JetBrainsMono Nerd Font', B;-inkscape-font-specification:'JetBrainsMono Nerd Font, B';fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.60379" /></text>
+           x="274.7851"
+           y="395.21622"
+           style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565">S</tspan></text>
       <path
          id="rect2"
-         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.28783"
-         d="M 180.61327,34.396769 247.30295,33.432136 160.03006,499.34931 H 95.810382 Z"
+         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.24841"
+         d="M 192.39522,77.628811 266.42059,76.812163 169.5479,471.25299 H 98.264216 Z"
          sodipodi:nodetypes="ccccc" />
       <path
          id="rect2-3"
-         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.22011"
-         d="m 288.30875,33.770083 -68.54448,-0.06392 89.30234,408.699287 h 65.71304 z"
+         style="fill:#67e8f9;fill-opacity:1;fill-rule:nonzero;stroke-width:1.17165"
+         d="m 297.30934,77.098265 -74.66113,-0.05411 97.27134,346.000725 h 71.57703 z"
          sodipodi:nodetypes="ccccc" />
-      <text
-         xml:space="preserve"
-         style="font-size:476.894px;font-family:'Nimbus Mono PS';-inkscape-font-specification:'Nimbus Mono PS';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#67e8f9;fill-opacity:1;stroke-width:0.715342"
-         x="275.31848"
-         y="393.87015"
-         id="text2"
-         transform="scale(0.95639881,1.0455889)"><tspan
-           sodipodi:role="line"
-           id="tspan2"
-           x="275.31848"
-           y="393.87015"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'SFMono Nerd Font';-inkscape-font-specification:'SFMono Nerd Font';fill:#67e8f9;fill-opacity:1;stroke-width:0.715342">S</tspan></text>
     </g>
   </g>
 </svg>
