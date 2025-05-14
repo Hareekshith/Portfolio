@@ -443,4 +443,7 @@ body{
   #time ul a{
     font-size: 0.7em !important;
   }
+  footer h2{
+    font-size: 20px !important;
+  }
 }

@@ -34,7 +34,6 @@
     </div>
     <h1>Hareekshith</h1>
     <h3 id="tr">I love to <span id="traits"></span></h3>
-    
     <div id="bio">
       <h3 id="am">About Me</h3>
       <img id="pfp" src="{% static 'img/pfp.jpg' %}" alt="nicepic">
@@ -51,8 +50,11 @@
         {% endfor %}
         <a id="rm" href="{% url 'tl' %}" style="display: flex;width: 8em; height: 2em; background-color: var(--btn); text-decoration: none; color: var(--txt); font-family: var(--fpar); border-radius: 0.7em; justify-content: center; align-items: center;">Read More</a>
       </ul>
-      <footer></footer>
-    </div><script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </div>
+      <footer style="margin-left: 40px; margin-right: 40px">
+        <h2 style="color:var(--acc); font-family:var(--ftit);text-align:left; font-size: 30px" >&lt;/Hareekshith&gt;</h2>
+      </footer>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="{% static 'script.js' %}" defer></script>
   </body>
 </html>
