@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: portfolio
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn portfolio.wsgi:application
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        sync: false
