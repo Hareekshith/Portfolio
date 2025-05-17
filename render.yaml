@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-django-site
+    name: portfolio
     env: python
     buildCommand: |
       pip install -r requirements.txt
