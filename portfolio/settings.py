@@ -25,7 +25,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['portfolio-6is0.onrender.com']
+ALLOWED_HOSTS = ['portfolio-9uye.onrender.com']
 
 
 # Application definition
