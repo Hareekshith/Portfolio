@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL = '/static/'
@@ -23,10 +24,10 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-SECRET_KEY=os.environ.get("SECRET_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
-ALLOWED_HOSTS = ['portfolio-9uye.onrender.com']
+ALLOWED_HOSTS = ['portfolio-9uye.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -42,8 +43,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',   
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',   
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
