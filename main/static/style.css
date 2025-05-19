@@ -1,12 +1,11 @@
 :root{
-  --bg:#0f172a;
-  --tbar: #1e293b;
-  --acc:#67e8f9;
-  --tit:#2563eb;
+  --bg:#171615;
+  --acc:#5c0d9f;
+  --tit:#9a359e;
   --txt:#f8fafc;
-  --sect:#1e293b;
-  --hligt:#60a5fa;
-  --btn: #1e40af;
+  --sect:#301236;
+  --hligt:#1da467;
+  --btn: #a11ee9;
   --ftit: "Space Mono";
   --fpar: "Jetbrains Mono";
 }
