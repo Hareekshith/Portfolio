@@ -4,10 +4,3 @@ var typed = new Typed("#traits", {
   backSpeed: 150,
   loop: true,
 })
-/*document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector('.navbar');
-  const toggle = document.querySelector('.nav-toggle');
-  toggle.addEventListener('click', function () {
-    nav.classList.toggle('menu-open');
-  });
-});*/
