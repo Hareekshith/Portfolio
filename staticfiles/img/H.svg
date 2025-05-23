@@ -40,9 +40,9 @@
     <g
        id="g38"
        transform="translate(-6.8434784,-12.92657)"
-       style="fill:#bb29ff;fill-opacity:1">
+       style="fill:#d97706;fill-opacity:1">
       <rect
-         style="fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:0.763443"
+         style="fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:0.763443"
          id="rect1"
          width="275.60852"
          height="42.485107"
@@ -50,7 +50,7 @@
          y="-69.086548"
          transform="rotate(90)" />
       <rect
-         style="fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:0.527602"
+         style="fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:0.527602"
          id="rect1-3"
          width="131.62956"
          height="42.485107"
@@ -58,7 +58,7 @@
          y="-286.53268"
          transform="scale(-1)" />
       <rect
-         style="fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:0.551446"
+         style="fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:0.551446"
          id="rect1-3-2"
          width="143.79575"
          height="42.485107"
@@ -67,7 +67,7 @@
          transform="scale(-1)" />
       <text
          xml:space="preserve"
-         style="font-size:361.507px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565"
+         style="font-size:361.507px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565"
          x="274.7851"
          y="395.21622"
          id="text1"
@@ -76,15 +76,15 @@
            id="tspan1"
            x="274.7851"
            y="395.21622"
-           style="fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565">S</tspan></text>
+           style="fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:1.35565">S</tspan></text>
       <path
          id="rect2"
-         style="fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:1.24841"
+         style="fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:1.24841"
          d="M 192.39522,77.628811 266.42059,76.812163 169.5479,471.25299 H 98.264216 Z"
          sodipodi:nodetypes="ccccc" />
       <path
          id="rect2-3"
-         style="fill:#bb29ff;fill-opacity:1;fill-rule:nonzero;stroke-width:1.17165"
+         style="fill:#d97706;fill-opacity:1;fill-rule:nonzero;stroke-width:1.17165"
          d="m 297.30934,77.098265 -74.66113,-0.05411 97.27134,346.000725 h 71.57703 z"
          sodipodi:nodetypes="ccccc" />
     </g>

@@ -1,11 +1,11 @@
 :root{
-  --bg:#171615;
-  --acc:#5c0d9f;
-  --tit:#9a359e;
-  --txt:#f8fafc;
-  --sect:#301236;
-  --hligt:#1da467;
-  --btn: #a11ee9;
+  --bg:    #1e1916;    /* Dark mocha */
+  --acc:   #d97706;    /* Amber accent */
+  --tit:   #fb7185;    /* Sunset coral title */
+  --txt:   #f9fafb;    /* Softest white text */
+  --sect:  #3f2e2c;    /* Warm brown section */
+  --hligt: #facc15;    /* Golden highlight */
+  --btn:   #ea580c;    /* Vivid orange button */
   --ftit: "Space Mono";
   --fpar: "Jetbrains Mono";
 }
