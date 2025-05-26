@@ -25,7 +25,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 SECRET_KEY = os.getenv("SECRET_KEY")
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['portfolio-9uye.onrender.com','127.0.0.1','hareekshith.is-a.dev']
 
