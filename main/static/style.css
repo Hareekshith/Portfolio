@@ -179,12 +179,12 @@ body{
   gap: 20px;
   justify-content: center;
 }
-.logtit{
+.logtit, .ctit{
   font-family: var(--ftit);
   text-align: center;
   color: var(--tit);
 }
-.logpara{
+.logpara, .cpara{
   font-family: var(--fpar);
   text-align: center;
   color: var(--txt);
@@ -208,12 +208,12 @@ body{
   height: 300px;
   justify-content: center;
 }
-.logtit a:link,
-.logtit a:visited{
+.ctit a:link,
+.ctit a:visited{
   color: var(--tit);
   text-decoration: none;
 }
-.logtit a:hover{
+.ctit a:hover{
   color: var(--acc);
 }
 .link{
@@ -284,7 +284,7 @@ body{
     flex-direction: column ;
     border-width: 2px;
     padding: 20px;
-    width: 300px;
+    width: 90vw;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
@@ -318,7 +318,7 @@ body{
     height: auto;
   }
   #avimg{
-    height: 250px;
+    height: 20rem;
   }
   h1{
     color: var(--tit);
@@ -401,7 +401,7 @@ body{
     margin-right: 10px;
   }
   #tit{
-    font-size: 3.2rem;
+    font-size: 2.7rem;
   }
   .exim{
     width: 60px !important;
@@ -410,13 +410,15 @@ body{
   #proj{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     padding: 0;
     margin-left: 11px;
     margin-right: 11px;
   }
   .proji{
-    padding: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
   }
   .projim{
     width: 250px !important;
@@ -427,6 +429,12 @@ body{
   }
   .logpara{
     font-size: 0.92em;
+  }
+  .ctit{
+    font-size: 1.05em;
+  }
+  .cpara{
+    font-size: 0.76em;
   }
   .link img{
     height: 2em !important;
