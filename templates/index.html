@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hareekshith</title>
+    <link rel="icon" type="img/xml+svg" href="{{ url_for('static', filename='img/H.svg') }}">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div id="titlebar" style="width: 100%; margin-top: 20px">
+      <nav>
+        <img id="logo" src="{{ url_for('static', filename='img/H.svg') }}" alt="logo.svg">
+        <a class="titcon" href="{{ url_for('home') }}">Home</a>
+        <a class="titcon" href="{{ url_for('exp') }}">Experience</a>
+        <a class="titcon" href="{{ url_for('soc') }}">Socials</a>
+        <div class="ddc">
+          <button><img id="dd" src="{{ url_for('static', filename='img/tl.svg') }}" alt="ddbox"></button>
+          <div class="mtitcon">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('exp') }}">Experience</a>
+            <a href="{{ url_for('soc') }}">Socials</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="avatar">
+      <img id="avimg" src="{{ url_for('static', filename='img/avatar.png') }}" alt="avatar">
+    </div>
+    <h1>Hareekshith</h1>
+    <h3 id="tr">I love to <span id="traits"></span></h3>
+    <div id="bio">
+      <h3 id="am">About Me</h3>
+      <img id="pfp" src="{{ url_for('static', filename='img/pfp.jpg') }}" alt="nicepic">
+      <p id="desc">  Hello, I am a novice programmer! I'm a passionate and curious developer with a solid foundation in programming languages including Java, C, C++, and Python. On the front-end side, I have a working knowledge of HTML and CSS, which I’m continuously improving as I build and design new projects. Currently, I'm pursuing a course in Cyber Security, where I'm diving deeper into the principles of digital protection, ethical hacking, and network security. I'm driven by a desire to build secure and efficient systems while expanding my skills across both development and security domains.
+      </p>
+    </div>
+    <div id="time" style="margin-bottom: 20px">
+      <h2 id="am" style="text-align: center;">Timeline</h2>
+      <ul>
+        {% for entry in ent %}
+        <li style="list-style: circle; color: var(--acc);">
+          <h2 style="font-family: var(--ftit); color: var(--tit)">{{ entry.title }}</h2> 
+          <h4 style="font-family: var(--fpar); color:var(--acc)">{{ entry.time }}</h4> 
+          <p style="color:var(--txt); font-family: var(--fpar)">{{ entry.desc }}</p>
+        </li>
+        {% endfor %}
+        <a id="rm" href="{{ url_for('tl') }}" style="display: flex;width: 8em; height: 2em; background-color: var(--btn); text-decoration: none; color: var(--txt); font-family: var(--fpar); border-radius: 0.7em; justify-content: center; align-items: center;">Read More</a>
+      </ul>
+    </div>
+    <footer style="margin-left: 40px; margin-right: 40px">
+      <h2 style="color:var(--acc); font-family:var(--ftit);text-align:left; font-size: 30px" >&lt;/Hareekshith&gt;</h2>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  </body>
+</html>
+

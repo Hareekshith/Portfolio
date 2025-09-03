@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experience</title>
+    <link rel="icon" type="img/xml+svg" href="{{ url_for('static', filename='img/H.svg') }}" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="titlebar" style="margin-top: 20px">
+      <nav>
+        <img id="logo" src="{{ url_for('static', filename='img/H.svg') }}" alt="logo.svg" />
+        <a class="titcon" href="{{ url_for('home') }}">Home</a>
+        <a class="titcon" href="{{ url_for('exp') }}">Experience</a>
+        <a class="titcon" href="{{ url_for('soc') }}">Socials</a>
+        <div class="ddc">
+          <button>
+            <img id="dd" src="{{ url_for('static', filename='img/tl.svg') }}" alt="ddbox" />
+          </button>
+          <div class="mtitcon">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('exp') }}">Experience</a>
+            <a href="{{ url_for('soc') }}">Socials</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h1 id="tit">Experience</h1>
+    <div id="exp">
+      <div class="expit">
+        <div class="imgcon">
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/git.svg') }}"
+            alt="git"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/gh.svg') }}"
+            alt="gh"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/nvim.svg') }}"
+            alt="nvim"
+            style="width: 90px; height: auto; grid-column: 1 / span 2; justify-self: center"
+          />
+        </div>
+        <h2 class="logtit">Code</h2>
+        <p class="logpara">
+          Programming is my favorite, making these tools my partners in crime!<br /><br /><span
+            style="color: var(--acc)"
+            >Git, Github, Neovim</span
+          >
+        </p>
+      </div>
+      <div class="expit">
+        <div class="imgcon">
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/cpp.svg') }}"
+            alt="cpp"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/java.svg') }}"
+            alt="java"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/python.svg') }}"
+            alt="py"
+            style="width: 90px; height: auto; grid-column: 1 / span 2; justify-self: center"
+          />
+        </div>
+        <h2 class="logtit">Programming</h2>
+        <p class="logpara">
+          The most addictive part of my job, coding, I would do it all-day-everyday!<br /><br /><span
+            style="color: var(--acc)"
+            >C++, Java, Python</span
+          >
+        </p>
+      </div>
+      <div class="expit">
+        <div class="imgcon">
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/html.svg') }}"
+            alt="html"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/css.svg') }}"
+            alt="css"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/node.svg') }}"
+            alt="js"
+            style="width: 90px; height: auto; grid-column: 1 / span 2; justify-self: center"
+          />
+        </div>
+        <h2 class="logtit">Frontend</h2>
+        <p class="logpara">
+          This design of website, done by these!! I am still learning these<br /><br /><span
+            style="color: var(--acc)"
+            >HTML, CSS, JS</span
+          >
+        </p>
+      </div>
+      <div class="expit">
+        <div class="imgcon">
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/dj.svg') }}"
+            alt="dj"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/flask.svg') }}"
+            alt="flask"
+            style="width: 90px; height: auto"
+          />
+        </div>
+        <h2 class="logtit">Backend</h2>
+        <p class="logpara">
+          The crucial part of hosting website and displaying datas, backend is required!<br /><br /><span
+            style="color: var(--acc)"
+            >Django,Flask</span
+          >
+        </p>
+      </div>
+      <div class="expit">
+        <div class="imgcon">
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/mongo.svg') }}"
+            alt="md"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/mysql.svg') }}"
+            alt="ms"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/postgresql.svg') }}"
+            alt="psql"
+            style="width: 90px; height: auto; grid-column: 1 / span 2; justify-self: center"
+          />
+        </div>
+        <h2 class="logtit">Database</h2>
+        <p class="logpara">
+          I love data, and love even more where I can manage them!<br /><br /><span
+            style="color: var(--acc)"
+            >MongoDB, MySQL, PostgreSQL</span
+          >
+        </p>
+      </div>
+      <div class="expit">
+        <div class="imgcon">
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/canva.svg') }}"
+            alt="canv"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/inkscape.svg') }}"
+            alt="inks"
+            style="width: 90px; height: auto"
+          />
+          <img
+            class="exim"
+            src="{{ url_for('static', filename='img/figma.svg') }}"
+            alt="fig"
+            style="width: 90px; height: auto; grid-column: 1 / span 2; justify-self: center"
+          />
+        </div>
+        <h2 class="logtit">Design and graphics</h2>
+        <p class="logpara">
+          DIY tools, where you put your heart and soul into! The reason why I love this!<br /><br /><span
+            style="color: var(--acc)"
+            >Canva, Inkspace, Figma</span
+          >
+        </p>
+      </div>
+    </div>
+    <h1 id="tit">Projects</h1>
+    <div id="proj">
+      <div class="proji">
+        <img
+          class="projim"
+          src="https://github.com/hareekshith/keylogger-detection/blob/main/poster_final.jpg?raw=true"
+          alt="keylogger"
+          style="height: auto; width: 400px; border-radius: 20px"
+        />
+        <h2 class="ctit">
+          <a href="https://github.com/Hareekshith/keylogger-detection">Keylogger Detector</a>
+        </h2>
+        <p class="cpara">
+          A utility, developed only for linux(for now) to detect keyloggers based on Heuristics
+        </p>
+      </div>
+      <div class="proji">
+        <img
+          class="projim"
+          src="https://github.com/ERROR-SIDDH/TEED-TS-WEB/blob/main/screenshot/teeds.png?raw=true"
+          alt="TEED-TS"
+          style="width: 400px; height: auto; border-radius: 20px"
+        />
+        <h2 class="ctit">
+          <a href="https://github.com/ERROR-SIDDH/TEED-TS-WEB">TEED-TS-WEB</a>
+        </h2>
+        <p class="cpara">
+          A full-stack project which detects and displays entry and exit logs with data visualizations
+        </p>
+      </div>
+      <!--<div class="proji" style="filter: blur(5px)">
+        <img
+          class="projim"
+          src="{{ url_for('static', filename='img/poster_final.jpg') }}"
+          alt="ttgen"
+          style="height: auto; width: 400px; border-radius: 20px"
+        />
+        <h2 class="ctit">TimeTable-Generator</h2>
+        <p class="cpara">A full-stack project that gets input from the user and generate a more equally weighed timetable!</p>
+      </div>-->
+    </div>
+    <footer style="margin-left: 40px; margin-right: 40px">
+      <h2 style="color: var(--acc); font-family: var(--ftit); text-align: left; font-size: 30px">
+        &lt;/Hareekshith&gt;
+      </h2>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  </body>
+</html>
+
