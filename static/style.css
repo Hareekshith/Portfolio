@@ -196,7 +196,7 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
   padding: 30px;
   place-items: center;
-  gap: 100px;
+  gap: 70px;
 }
 .proji{
   display: flex;
@@ -208,13 +208,16 @@ body{
   height: 300px;
   justify-content: center;
 }
-.ctit a:link,
-.ctit a:visited{
+a{
+  transition: cubic-bezier(.4,0,.2,1) 0.3s;
+}
+a:link,
+a:visited{
   color: var(--tit);
   text-decoration: none;
 }
-.ctit a:hover{
-  color: var(--acc);
+a:hover{
+  transform: scale(1.021);
 }
 .link{
   display: flex;
