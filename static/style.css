@@ -71,7 +71,7 @@ button{
   font-size: 0.82em;
 }
 .titcon:hover{
-  font-size: 20px;
+  transform: scale(1.18);
   filter: grayscale(0%) brightness(120%);
 }
 h1{
@@ -196,7 +196,7 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
   padding: 30px;
   place-items: center;
-  gap: 70px;
+  gap: 100px;
 }
 .proji{
   display: flex;
@@ -208,15 +208,14 @@ body{
   height: 300px;
   justify-content: center;
 }
-a{
+#proj a {
   transition: cubic-bezier(.4,0,.2,1) 0.3s;
-}
-a:link,
-a:visited{
-  color: var(--tit);
   text-decoration: none;
 }
-a:hover{
+#proj a:visited {
+  text-decoration: none;
+}
+#proj a:hover {
   transform: scale(1.021);
 }
 .link{
