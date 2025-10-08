@@ -21,7 +21,7 @@
   <body>
     <div id="titlebar" style="margin-top: 20px;">
       <nav>
-        <img id="logo" src="{{ url_for('static', filename='img/H.svg') }}" alt="logo.svg" />
+        <a href="{{ url_for('home') }}"><img id="logo" src="{{ url_for('static', filename='img/H.svg') }}" alt="logo.svg" /></a>
         <a class="titcon" href="{{ url_for('home') }}">Home</a>
         <a class="titcon" href="{{ url_for('exp') }}">Experience</a>
         <a class="titcon" href="{{ url_for('soc') }}">Socials</a>
