@@ -4,8 +4,6 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId 
 from dotenv import load_dotenv
-# Vercel will set MONGODB_URI via Environment Variables
-# Make sure to add this variable in your Vercel Project Settings
 MONGO_URI = os.environ.get('mu')
 DB_NAME = "time_line"
 COLLECTION_NAME = "timenux"
