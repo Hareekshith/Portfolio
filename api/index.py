@@ -3,7 +3,6 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId 
-from dotenv import load_dotenv
 MONGO_URI = os.environ.get('mu')
 DB_NAME = "time_line"
 COLLECTION_NAME = "timenux"
@@ -83,4 +82,4 @@ def catch_all(path):
 
 # For local testing only
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True)
