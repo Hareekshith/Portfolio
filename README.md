@@ -2,11 +2,10 @@
 Enter Portfolio, this is my way of decently representing my skills and projects. Built using basic tools. 
 
 ## Tech Stack
-- Frontend: Traditional(HTML, CSS, JS)
+- Frontend: React+VITE+TailwindCSS
 - Backend: Flask
 - Database: MongoDB
-- Hosting(Frontend): Vercel
-- Hosting(Backend): Render
+- Hosting(Frontend & Backend(Serverless)): Vercel
 
 ## Features
 - A small know about me, and timeline
