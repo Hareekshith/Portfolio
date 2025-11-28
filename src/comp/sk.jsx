@@ -37,8 +37,7 @@ const skillsData = [
     accent: 'Django, Flask',
     images: [
       { src: '/img/dj.svg', alt: 'dj' },
-      { src: '/img/flask.svg', alt: 'flask' },
-      { src: '/img/node.svg', alt: 'node', fullWidth: true }, 
+      { src: '/img/flask.svg', alt: 'flask' ,fullWidth: true },
     ],
   },
   {
