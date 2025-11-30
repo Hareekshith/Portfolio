@@ -23,8 +23,7 @@ const Home = () => {
           </h1>
           
           <div className="text-base sm:text-xl text-gray-400 font-light h-auto min-h-[3rem] flex flex-wrap items-baseline gap-2">
-            <span className="whitespace-nowrap">&gt; I love to</span>
-            <TypedText />
+            <h2 className="text-amber-accent"><TypedText /></h2>
           </div>
           <a href="#bio" className="btn-primary mt-8">
             View My Work
