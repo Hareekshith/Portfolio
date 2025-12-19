@@ -5,26 +5,32 @@ const projectsData = [
     title: 'Keylogger Detector',
     paragraph: 'A utility, developed only for linux(for now) to detect keyloggers based on Heuristics',
     link: 'https://github.com/Hareekshith/keylogger-detection',
-    imgSrc: 'https://github.com/hareekshith/keylogger-detection/blob/main/poster_final.jpg?raw=true',
+    imgSrc: 'https://github.com/hareekshith/keylogger-detection/blob/main/poster_final.webp?raw=true',
   },
   {
     title: 'TEED-TS-WEB',
     paragraph: 'A full-stack project which detects and displays entry and exit logs with data visualizations',
     link: 'https://github.com/ERROR-SIDDH/TEED-TS-WEB',
-    imgSrc: 'https://github.com/ERROR-SIDDH/TEED-TS-WEB/blob/main/screenshot/teeds.png?raw=true',
+    imgSrc: 'https://github.com/ERROR-SIDDH/TEED-TS-WEB/blob/main/screenshot/teeds.webp?raw=true',
   },
   {
     title: 'TimeTable-Generator',
     paragraph: 'A full-stack project that gets input from the user and generate a more equally weighed timetable!',
     link: 'https://github.com/hareekshith/TimeTable-Generator',
-    imgSrc: 'https://github.com/hareekshith/TimeTable-Generator/blob/main/poster_final.png?raw=true',
+    imgSrc: 'https://github.com/hareekshith/TimeTable-Generator/blob/main/poster_final.webp?raw=true',
   },
   {
     title: 'Home CS LAB',
     paragraph: 'A project which helps blue-team professionals to study and fix the unknown vulnerabilities',
     link: 'https://github.com/hareekshith/Home_CS_LAB',
-    imgSrc: 'https://github.com/hareekshith/blue-team-docker/blob/main/Home_CS_LAB.png?raw=true',
+    imgSrc: 'https://github.com/hareekshith/blue-team-docker/blob/main/Home_CS_LAB.webp?raw=true',
   },
+  {
+    title: 'Prufung-AI',
+    paragraph: 'A project which focuses on AI-Based question generation and result analysis having 3 difficulties',
+    link: 'https://github.com/hareekshith/Prufung',
+    imgSrc: 'https://github.com/hareekshith/Prufung/blob/main/poster_final.webp?raw=true'
+  }
 ];
 
 const ProjectsSection = () => {

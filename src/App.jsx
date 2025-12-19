@@ -19,7 +19,6 @@ function App() {
           <Route path="/exp" element={<ExperiencePage />} />
           <Route path="/soc" element={<SocialsPage />} />
           <Route path="/tl" element={<TimelinePage />} />
-          
           {/* Fallback route */}
           <Route path="*" element={<Home />} /> 
         </Routes>
