@@ -45,7 +45,7 @@ const Home = () => {
       </section>
 
       {/* 2. About Me: Side-by-Side Grid (No rounded corners) */}
-      <section id="bio" className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-12 mb-32 items-start">
+      <section id="bio" className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-12 mb-32 items-start scroll-mt-24">
         <div className="relative max-w-[250px] mx-auto md:mx-0 w-full">
            <img 
             src={pfpPath} 
