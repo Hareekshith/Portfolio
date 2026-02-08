@@ -82,4 +82,4 @@ def catch_all(path):
 
 # For local testing only
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
