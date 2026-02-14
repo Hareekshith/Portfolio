@@ -30,6 +30,18 @@ const projectsData = [
     paragraph: 'A project which focuses on AI-Based question generation and result analysis having 3 difficulties',
     link: 'https://github.com/hareekshith/Prufung',
     imgSrc: 'https://github.com/hareekshith/Prufung/blob/main/poster_final.webp?raw=true'
+  },
+  {
+    title: 'PacketSniffer',
+    paragraph: 'A small task which was given to me which analyses the network packet and payloads, using scapy.',
+    link: 'https://github.com/hareekshith/PacketSniffer',
+    imgSrc: 'https://github.com/hareekshith/PacketSniffer/blob/main/poster_final.webp?raw=true'
+  },
+  {
+    title: 'CodeReviewer',
+    paragraph: 'A project which reviews a python-based backend codes, and suggests(some) the alternative save versions',
+    link: 'https://github.com/hareekshith/CodeReviewer',
+    imgSrc: 'https://github.com/hareekshith/CodeReviewer/blob/main/poster_final.webp?raw=true'
   }
 ];
 
