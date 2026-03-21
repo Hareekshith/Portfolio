@@ -48,6 +48,7 @@ const projectsData = [
     paragraph: 'A tool made using Python which detects SYN_flood and Portscans on a host computer, using scapy.',
     link: 'https://github.com/Hareekshith/NetSentinel',
     imgSrc: 'https://github.com/hareekshith/NetSentinel/blob/main/poster_final.webp?raw=true'
+  }
 ];
 
 const ProjectsSection = () => {
