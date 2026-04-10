@@ -48,6 +48,12 @@ const projectsData = [
     paragraph: 'A tool made using Python which detects SYN_flood and Portscans on a host computer, using scapy.',
     link: 'https://github.com/Hareekshith/NetSentinel',
     imgSrc: 'https://github.com/hareekshith/NetSentinel/blob/main/poster_final.webp?raw=true'
+  },
+  {
+    title: 'ApriNet',
+    paragraph: 'A tool uses Apriori Association Rule to study the normal pattern of the capture network packets.',
+    link: 'https://github.com/Hareekshith/ApriNet',
+    imgSrc: 'https://github.com/hareekshith/ApriNet/blob/main/poster_final.webp?raw=true'
   }
 ];
 
