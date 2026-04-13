@@ -11,7 +11,7 @@ const projectsData = [
     title: 'TEED-TS-WEB',
     paragraph: 'A full-stack project which detects and displays entry and exit logs with data visualizations',
     link: 'https://raw.githubusercontent.com/Hareekshith/TEED-TS-WEB',
-    imgSrc: 'https://raw.githubusercontent.com/Hareekshith/TEED-TS-WEB/main/screenshot/teeds.webp',
+    imgSrc: 'https://raw.githubusercontent.com/Hareekshith/TEED-TS-WEB/main/screenshot/teeds.png',
   },
   {
     title: 'TimeTable-Generator',
