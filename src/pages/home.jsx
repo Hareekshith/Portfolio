@@ -3,8 +3,8 @@ import TypedText from '../comp/tt';
 import TimelineSection from '../comp/time';
 
 const Home = () => {
-  const avatarPath = '/img/avatar.webp';
-  const pfpPath = '/img/pfp.webp';
+  const avatarPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/avatar.webp';
+  const pfpPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/pfp.webp';
 
   return (
     <div className="max-w-7xl mx-auto px-6 pb-20">

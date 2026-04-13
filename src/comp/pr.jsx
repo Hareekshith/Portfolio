@@ -4,56 +4,56 @@ const projectsData = [
   {
     title: 'Keylogger Detector',
     paragraph: 'A utility, developed only for linux(for now) to detect keyloggers based on Heuristics',
-    link: 'https://github.com/Hareekshith/keylogger-detection',
-    imgSrc: 'https://github.com/hareekshith/keylogger-detection/blob/main/poster_final.webp?raw=true',
+    link: 'https://raw.githubusercontent.com/Hareekshith/keylogger-detection',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/keylogger-detection/main/poster_final.webp',
   },
   {
     title: 'TEED-TS-WEB',
     paragraph: 'A full-stack project which detects and displays entry and exit logs with data visualizations',
-    link: 'https://github.com/ERROR-SIDDH/TEED-TS-WEB',
-    imgSrc: 'https://github.com/ERROR-SIDDH/TEED-TS-WEB/blob/main/screenshot/teeds.webp?raw=true',
+    link: 'https://raw.githubusercontent.com/Hareekshith/TEED-TS-WEB',
+    imgSrc: 'https://raw.githubusercontent.com/Hareekshith/TEED-TS-WEB/main/screenshot/teeds.webp',
   },
   {
     title: 'TimeTable-Generator',
     paragraph: 'A full-stack project that gets input from the user and generate a more equally weighed timetable!',
-    link: 'https://github.com/hareekshith/TimeTable-Generator',
-    imgSrc: 'https://github.com/hareekshith/TimeTable-Generator/blob/main/poster_final.webp?raw=true',
+    link: 'https://raw.githubusercontent.com/hareekshith/TimeTable-Generator',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/TimeTable-Generator/main/poster_final.webp',
   },
   {
     title: 'Home CS LAB',
     paragraph: 'A project which helps blue-team professionals to study and fix the unknown vulnerabilities',
-    link: 'https://github.com/hareekshith/Home_CS_LAB',
-    imgSrc: 'https://github.com/hareekshith/blue-team-docker/blob/main/Home_CS_LAB.webp?raw=true',
+    link: 'https://raw.githubusercontent.com/hareekshith/Home_CS_LAB',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/blue-team-docker/main/Home_CS_LAB.webp',
   },
   {
     title: 'Prufung-AI',
     paragraph: 'A project which focuses on AI-Based question generation and result analysis having 3 difficulties',
-    link: 'https://github.com/hareekshith/Prufung',
-    imgSrc: 'https://github.com/hareekshith/Prufung/blob/main/poster_final.webp?raw=true'
+    link: 'https://raw.githubusercontent.com/hareekshith/Prufung',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/Prufung/main/poster_final.webp'
   },
   {
     title: 'PacketSniffer',
     paragraph: 'A small task which was given to me which analyses the network packet and payloads, using scapy.',
-    link: 'https://github.com/hareekshith/PacketSniffer',
-    imgSrc: 'https://github.com/hareekshith/PacketSniffer/blob/main/poster_final.webp?raw=true'
+    link: 'https://raw.githubusercontent.com/hareekshith/PacketSniffer',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/PacketSniffer/main/poster_final.webp'
   },
   {
     title: 'CodeReviewer',
     paragraph: 'A project which reviews a python-based backend codes, and suggests(some) the alternative save versions',
-    link: 'https://github.com/hareekshith/CodeReviewer',
-    imgSrc: 'https://github.com/hareekshith/CodeReviewer/blob/main/poster_final.webp?raw=true'
+    link: 'https://raw.githubusercontent.com/hareekshith/CodeReviewer',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/CodeReviewer/main/poster_final.webp'
   },
   {
     title: 'NetSentinel',
     paragraph: 'A tool made using Python which detects SYN_flood and Portscans on a host computer, using scapy.',
-    link: 'https://github.com/Hareekshith/NetSentinel',
-    imgSrc: 'https://github.com/hareekshith/NetSentinel/blob/main/poster_final.webp?raw=true'
+    link: 'https://raw.githubusercontent.com/Hareekshith/NetSentinel',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/NetSentinel/main/poster_final.webp'
   },
   {
     title: 'ApriNet',
     paragraph: 'A tool uses Apriori Association Rule to study the normal pattern of the capture network packets.',
-    link: 'https://github.com/Hareekshith/ApriNet',
-    imgSrc: 'https://github.com/hareekshith/ApriNet/blob/main/poster_final.webp?raw=true'
+    link: 'https://raw.githubusercontent.com/Hareekshith/ApriNet',
+    imgSrc: 'https://raw.githubusercontent.com/hareekshith/ApriNet/main/poster_final.webp'
   }
 ];
 
