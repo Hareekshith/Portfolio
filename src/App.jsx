@@ -6,6 +6,7 @@ import Home from './pages/home';
 import ExperiencePage from './pages/exp';
 import SocialsPage from './pages/soc';
 import TimelinePage from './pages/tl';
+import Resume from './comp/resume';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/exp" element={<ExperiencePage />} />
           <Route path="/soc" element={<SocialsPage />} />
           <Route path="/tl" element={<TimelinePage />} />
+          <Route path="/resume" element={<Resume />} />
           {/* Fallback route */}
           <Route path="*" element={<Home />} /> 
         </Routes>

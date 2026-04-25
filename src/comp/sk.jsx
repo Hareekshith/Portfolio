@@ -3,7 +3,7 @@ import React from 'react';
 const skillsData = [
   {
     title: 'Code',
-    paragraph: 'Programming is my jam—these tools are my partners in code crimes!',
+    paragraph: 'Programming is my jam these tools are my partners in code crimes!',
     accent: 'Git, Github, Neovim',
     images: [
       { src: '/img/git.svg', alt: 'git' },
@@ -13,7 +13,7 @@ const skillsData = [
   },
   {
     title: 'Programming',
-    paragraph: 'Coding is dangerously addictive—catch me doing it 25/8.',
+    paragraph: 'Coding is dangerously addictive catch me doing it 25/8.',
     accent: 'C++, Java, Python',
     images: [
       { src: '/img/cpp.svg', alt: 'cpp' },
@@ -33,16 +33,17 @@ const skillsData = [
   },
   {
     title: 'Backend',
-    paragraph: "Making everything work behind the scenes—because vibes alone don’t run a website.",
-    accent: 'Django, Flask',
+    paragraph: "Making everything work behind the scenes because vibes alone don't run a website.",
+    accent: 'Django, Flask, FastAPI',
     images: [
       { src: '/img/dj.svg', alt: 'dj' },
-      { src: '/img/flask.svg', alt: 'flask' ,fullWidth: true },
+      { src: '/img/fast.svg', alt: 'fapi' },
+      { src: '/img/flask.svg', alt: 'flask', fullWidth: true },
     ],
   },
   {
     title: 'Database',
-    paragraph: "Living for the data game—organizing chaos, one query at a time.",
+    paragraph: "Living for the data game organizing chaos, one query at a time.",
     accent: 'MongoDB, MySQL, PostgreSQL',
     images: [
       { src: '/img/mongo.svg', alt: 'md' },
@@ -52,12 +53,31 @@ const skillsData = [
   },
   {
     title: 'Design',
-    paragraph: "Putting heart, soul, and a dash of DIY into every pixel. That’s why I’m obsessed!",
+    paragraph: "Putting heart, soul, and a dash of DIY into every pixel. That's why I'm obsessed!",
     accent: 'Canva, Inkspace, Figma',
     images: [
       { src: '/img/canva.svg', alt: 'canv' },
       { src: '/img/inkscape.svg', alt: 'inks' },
       { src: '/img/figma.svg', alt: 'fig', fullWidth: true },
+    ],
+  },
+  {
+    title: "Linux",
+    paragraph: "Linux is my playground where I geek out on code, security, and all things tech.",
+    accent: "Ubuntu, Arch, Kali",
+    images: [
+      { src: '/img/ubuntu.svg', alt: 'ubuntu' },
+      { src: '/img/arch.svg', alt: 'arch' },
+      { src: '/img/kali.svg', alt: 'kali', fullWidth: true },
+    ],
+  },
+  {
+    title: "Networking",
+    paragraph: "Understanding the flow of data from the tiniest packet to the vast digital ocean.",
+    accent: "Cisco_Packet_Tracer, WireShark",
+    images: [
+      { src: '/img/cpt.svg', alt: 'cpt' },
+      { src: '/img/ws.svg', alt: 'ws', fullWidth: true },
     ],
   },
 ];
@@ -73,14 +93,14 @@ const SkillsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
         {skillsData.map((skill, index) => (
           <div key={index} className="flex flex-col items-start text-left group">
-            
+
             {/* Icons Row */}
             <div className="flex gap-6 mb-6 h-12 items-center">
               {skill.images.map((img, idx) => (
-                <img 
+                <img
                   key={idx}
-                  src={img.src} 
-                  alt={img.alt} 
+                  src={img.src}
+                  alt={img.alt}
                   className="h-10 w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
                 />
               ))}
@@ -89,7 +109,7 @@ const SkillsSection = () => {
             <h3 className="text-xl font-title text-white mb-3 border-l-2 border-amber-accent pl-4">
               {skill.title}
             </h3>
-            
+
             <p className="text-gray-400 text-sm leading-relaxed mb-4 pl-4 border-l-2 border-transparent">
               {skill.paragraph}
             </p>

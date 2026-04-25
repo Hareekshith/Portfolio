@@ -1,0 +1,75 @@
+Hareekshith AS
+github.com/hareekshith | Hareekshith.is-a.dev | hareekshith@gmail.com | linkedin.com/in/Hareekshith-tzzs3118
+
+Education
+Vellore Institute of Technology
+Bachelor of Technology (B.Tech) in Cyber Security
+
+Chennai, India
+Aug 2024–Jul 2028
+
+The PSBB Millennium School
+Higher and Senior Secondary Education – PCM + CS
+
+Cuddalore, India
+June 2018-March 2024
+
+Experience
+Cyber-Security Intern
+
+Feb 2026 – March 2026
+
+Elevate Labs, India
+
+•
+•
+•
+
+Online
+
+Completed intensive hands-on training in nmap, wireshark, ufw and openvas.
+Gained practical exposure to network security concepts.
+Applied the skills learnt into building a project named NetSentinel.
+
+Projects
+Home CyberSecurity Lab | Docker, Debian Netinst, Virtual Box
+•
+•
+
+Built a resource friendly product for security enthusiasts, which gives them a practical exposure on
+endpoint security.
+The project is made possible using NetInst Debian ISO (run as VM), Kali-rolling and Wazuh
+components docker containers.
+
+NetSentinel | Scapy, Rich, Python
+•
+•
+
+A lightweight project which captures packets for 60 seconds and detects network anomalies like
+SYN_Flood and Port Scanning.
+The project was made using Scapy (Capture network packets), Rich (Displays data in a Terminal UI)
+and Python.
+
+Keylogger Detector | CSV, Shell, Pandas, Python
+•
+•
+•
+
+A heuristic based project which detects active keyloggers in a Linux distribution.
+The project was built using Shell Scripts (Get the resource data of the processes), Pandas (Classify
+the processes based on the heuristics calculation).
+A simple and a quick program, which gives us the results within milliseconds.
+
+Certifications
+NPTEL Cyber Security and Privacy
+IIT Madras
+
+Technical Skills
+Languages: C/C++, Python, Java, HTML/CSS, Javascript
+Database: MySQL, PostgreSQL and Oracle DB
+Frameworks & Libraries: Next.js, React, Chart.js, Tailwind CSS, Node.js, Flask
+Tools: Wireshark, Cisco Packet Tracer, Vercel, Render, MongoDB
+
+Oct 2025
+
+

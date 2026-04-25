@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import TypedText from '../comp/tt';
 import TimelineSection from '../comp/time';
 
@@ -25,9 +26,9 @@ const Home = () => {
           <div className="text-base sm:text-xl text-gray-400 font-light h-auto min-h-[3rem] flex flex-wrap items-baseline gap-2">
             <h2 className="text-amber-accent"><TypedText /></h2>
           </div>
-          <a href="#bio" className="btn-primary mt-8">
-            View My Work
-          </a>
+          <Link to="/resume" className="btn-primary mt-8">
+            View my Resume
+          </Link>
         </div>
 
         {/* Right: Large Hero Image */}
