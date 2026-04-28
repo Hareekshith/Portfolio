@@ -18,7 +18,7 @@ const Resume = () => {
         </a>
       </div>
 
-      <article className="max-w-4xl w-full flat-card shadow-2xl rounded-sm">
+      <article className="max-w-5xl w-full flat-card shadow-2xl rounded-sm">
 
         {/* Header */}
         <header className="text-center mb-8">
@@ -48,7 +48,7 @@ const Resume = () => {
 
         {/* Experience */}
         <section className="mb-6">
-          <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Experience</h2>
+          <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Internship</h2>
 
           <div>
             <div className="flex justify-between items-end">
@@ -120,8 +120,8 @@ const Resume = () => {
               <span className="text-sm font-semibold text-gray-400">Chennai, India</span>
             </div>
             <div className="flex justify-between items-end text-soft-white italic">
-              <span>Bachelor of Technology (B.Tech) in Cyber Security 
-                <span className="text-gray-400 text-[0.85rem] ml-2">| CGPA: 8.56</span>
+              <span>Pursuing 4th Semester Computer Science - Cyber Security
+                <span className="text-gray-400 text-[0.85rem] ml-2">(CGPA - 8.56 / 3rd semester)</span>
               </span>
               <span className="text-sm">Aug 2024-Jul 2028</span>
             </div>
@@ -134,8 +134,8 @@ const Resume = () => {
             </div>
             <div className="flex justify-between items-end text-soft-white italic">
               <span>
-                Higher and Senior Secondary Education - PCM + CS 
-                <span className="text-gray-400 text-[0.85rem] ml-2">| 88.6%</span>
+                Higher and Senior Secondary Education - PCM + CS
+                <span className="text-gray-400 text-[0.85rem] ml-2">(12th - 88.6%)</span>
               </span>
               <span className="text-sm">June 2018-March 2024</span>
             </div>

@@ -22,13 +22,22 @@ const skillsData = [
     ],
   },
   {
-    title: 'Frontend',
-    paragraph: "Website looks? Powered by these! Still leveling up, but hey, we all start somewhere.",
-    accent: 'HTML, CSS, JS',
+    title: "Linux",
+    paragraph: "Linux is my playground where I geek out on code, security, and all things tech.",
+    accent: "Ubuntu, Arch, Kali",
     images: [
-      { src: '/img/html.svg', alt: 'html' },
-      { src: '/img/css.svg', alt: 'css' },
-      { src: '/img/node.svg', alt: 'js', fullWidth: true },
+      { src: '/img/ubuntu.svg', alt: 'ubuntu' },
+      { src: '/img/arch.svg', alt: 'arch' },
+      { src: '/img/kali.svg', alt: 'kali', fullWidth: true },
+    ],
+  },
+  {
+    title: "Networking",
+    paragraph: "Understanding the flow of data from the tiniest packet to the vast digital ocean.",
+    accent: "Cisco_Packet_Tracer, WireShark",
+    images: [
+      { src: '/img/cpt.svg', alt: 'cpt' },
+      { src: '/img/ws.svg', alt: 'ws', fullWidth: true },
     ],
   },
   {
@@ -39,6 +48,16 @@ const skillsData = [
       { src: '/img/dj.svg', alt: 'dj' },
       { src: '/img/fast.svg', alt: 'fapi' },
       { src: '/img/flask.svg', alt: 'flask', fullWidth: true },
+    ],
+  },
+  {
+    title: 'Frontend',
+    paragraph: "Website looks? Powered by these! Still leveling up, but hey, we all start somewhere.",
+    accent: 'HTML, CSS, JS',
+    images: [
+      { src: '/img/html.svg', alt: 'html' },
+      { src: '/img/css.svg', alt: 'css' },
+      { src: '/img/node.svg', alt: 'js', fullWidth: true },
     ],
   },
   {
@@ -59,25 +78,6 @@ const skillsData = [
       { src: '/img/canva.svg', alt: 'canv' },
       { src: '/img/inkscape.svg', alt: 'inks' },
       { src: '/img/figma.svg', alt: 'fig', fullWidth: true },
-    ],
-  },
-  {
-    title: "Linux",
-    paragraph: "Linux is my playground where I geek out on code, security, and all things tech.",
-    accent: "Ubuntu, Arch, Kali",
-    images: [
-      { src: '/img/ubuntu.svg', alt: 'ubuntu' },
-      { src: '/img/arch.svg', alt: 'arch' },
-      { src: '/img/kali.svg', alt: 'kali', fullWidth: true },
-    ],
-  },
-  {
-    title: "Networking",
-    paragraph: "Understanding the flow of data from the tiniest packet to the vast digital ocean.",
-    accent: "Cisco_Packet_Tracer, WireShark",
-    images: [
-      { src: '/img/cpt.svg', alt: 'cpt' },
-      { src: '/img/ws.svg', alt: 'ws', fullWidth: true },
     ],
   },
 ];
