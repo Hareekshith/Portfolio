@@ -15,8 +15,8 @@ const Home = () => {
         
         {/* Left: Text Content */}
         <div className="order-2 lg:order-1 flex flex-col items-start text-left space-y-6">
-          <div className="inline-block px-3 py-1 border border-amber-accent text-amber-accent text-xs tracking-widest uppercase">
-            Portfolio
+          <div className="inline-block px-3 py-1 border border-amber-accent text-amber-accent text-xs font-mono tracking-widest uppercase">
+            [ STATUS: SECURE ]
           </div>
           
           <h1 className="text-4xl md:text-8xl font-bold text-white leading-tight">
@@ -27,13 +27,13 @@ const Home = () => {
             <h2 className="text-amber-accent"><TypedText /></h2>
           </div>
           <Link to="/resume" className="btn-primary mt-8">
-            View my Resume
+            [ ACCESS_CLEARANCE: RESUME ]
           </Link>
         </div>
 
         {/* Right: Large Hero Image */}
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative">
-          <div className="relative w-full max-w-[500px] aspect-square">
+          <div className="relative w-full max-w-[500px] aspect-square scanline-container">
             {/* Simple solid border frame effect */}
             <div className="absolute inset-0 border-2 border-white/10 translate-x-4 translate-y-4 z-0"></div>
             <img 
@@ -56,20 +56,23 @@ const Home = () => {
         </div>
         
         <div className="flex flex-col justify-center">
-          <h3 className="text-3xl font-title text-white mb-6 flex items-center gap-4">
-            <span className="w-12 h-[2px] bg-amber-accent"></span>
-            About Me
-          </h3>
-          <p className="text-gray-300 text-lg leading-relaxed text-justify">
-            Hello, I am a novice programmer! I'm a passionate and curious developer with a solid foundation in programming languages including <strong className="text-white">Java, C, C++, and Python</strong>. On the front-end side, I have a working knowledge of HTML and CSS. Currently, I'm pursuing a course in Cyber Security, where I'm diving deeper into the principles of digital protection, ethical hacking, and network security.
-          </p>
-        </div>
+  <h3 className="text-3xl font-mono text-white mb-6 flex items-center gap-4">
+    <span className="text-amber-accent">{'>'}</span>
+    whoami
+    <span className="blinking-cursor ml-1 text-amber-accent">█</span>
+  </h3>
+  <p className="text-gray-300 text-lg leading-relaxed text-justify">
+    Hello, I am Hareekshith, a defensive security enthusiast. I actively learn and apply my skills by building practical projects and experimenting with real-world scenarios. I have set up a home cybersecurity lab to explore vulnerabilities and understand how to identify and mitigate them.<br /><br />
+    
+    I have participated in multiple Capture The Flag (CTF) competitions to gain exposure to different types of attacks, how they are executed, and their impact on systems. Using this knowledge, I focus on analyzing and mitigating common security vulnerabilities.
+  </p>
+</div>
       </section>
       {/* 3. Timeline Section */}
-      <h3 className="text-3xl font-title text-white mb-6 text-center flex items-center gap-4">
-        <span className="w-12 h-[2px] bg-amber-accent"></span>
-        TimeLine
-        <span className="w-12 h-[2px] bg-amber-accent"></span>
+      <h3 className="text-3xl font-mono text-white mb-6 text-center flex justify-center items-center gap-4">
+        <span className="text-amber-accent">{'>'}</span>
+        head -n 3 timeline.log
+        <span className="blinking-cursor ml-1 text-amber-accent">█</span>
       </h3>
       <TimelineSection isFullTimeline={false} />
     </div>

@@ -86,13 +86,18 @@ const SkillsSection = () => {
   return (
     <section className="container mx-auto px-6 py-20">
       <div className="flex items-center gap-4 mb-16">
-        <h1 className="text-4xl font-bold text-white">Experience</h1>
-        <div className="flex-grow h-[1px] bg-white/20"></div>
+        <h1 className="text-4xl font-mono text-white flex items-center gap-3">
+          <span className="text-amber-accent">{'>'}</span>
+          [ SYS_DIAGNOSTICS: SKILLS ]
+          <span className="blinking-cursor text-amber-accent">█</span>
+        </h1>
+        <div className="flex-grow h-[1px] bg-white/20 border-b border-dashed border-amber-accent/30"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
         {skillsData.map((skill, index) => (
-          <div key={index} className="flex flex-col items-start text-left group">
+          <div key={index} className="flex flex-col items-start text-left group p-6 border border-white/10 cyber-glow-hover bg-warm-brown relative">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-amber-accent/30 group-hover:bg-amber-accent transition-colors duration-300"></div>
 
             {/* Icons Row */}
             <div className="flex gap-6 mb-6 h-12 items-center">
@@ -106,8 +111,8 @@ const SkillsSection = () => {
               ))}
             </div>
 
-            <h3 className="text-xl font-title text-white mb-3 border-l-2 border-amber-accent pl-4">
-              {skill.title}
+            <h3 className="text-xl font-mono text-white mb-3 border-l-2 border-amber-accent pl-4">
+              {skill.title}<span className="text-xs text-gray-500 font-mono ml-2">.exe</span>
             </h3>
 
             <p className="text-gray-400 text-sm leading-relaxed mb-4 pl-4 border-l-2 border-transparent">

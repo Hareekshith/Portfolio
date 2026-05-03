@@ -9,9 +9,9 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Experience', path: '/exp' },
-    { name: 'Socials', path: '/soc' },
+    { name: '~/home', path: '/' },
+    { name: '~/exp', path: '/exp' },
+    { name: '~/soc', path: '/soc' },
   ];
 
   return (
@@ -29,9 +29,10 @@ const Header = () => {
             <Link 
               key={link.name}
               to={link.path} 
-              className={`nav-link ${location.pathname === link.path ? 'text-amber-accent' : ''}`}
+              className={`nav-link font-mono ${location.pathname === link.path ? 'text-amber-accent' : ''}`}
             >
               {link.name}
+              {location.pathname === link.path && <span className="blinking-cursor ml-1 text-amber-accent">█</span>}
             </Link>
           ))}
         </nav>
@@ -52,9 +53,10 @@ const Header = () => {
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-center py-3 text-lg font-title text-white hover:text-amber-accent border border-white/5 bg-mocha-dark"
+                className="text-center py-3 text-lg font-mono text-white hover:text-amber-accent border border-white/5 bg-mocha-dark"
               >
                 {link.name}
+                {location.pathname === link.path && <span className="blinking-cursor ml-2 text-amber-accent">█</span>}
               </Link>
             ))}
           </div>

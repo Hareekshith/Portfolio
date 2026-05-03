@@ -10,11 +10,12 @@ const TypedText = () => {
       <ReactTyped
         className="text-amber-accent"
         strings={[
-          "Programmer.", 
-          "Defender.", 
-          "Editor."
+          "Monitor.", 
+          "Exploit.", 
+          "Analyse.",
+          "Repeat."
         ]}
-        typeSpeed={150}
+        typeSpeed={50}
         backSpeed={15}
         loop
       />

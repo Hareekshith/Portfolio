@@ -14,15 +14,23 @@ const Resume = () => {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
           </svg>
-          Download PDF
+          [ EXTRACT_DOSSIER ]
         </a>
       </div>
 
-      <article className="max-w-5xl w-full flat-card shadow-2xl rounded-sm">
+      <article className="max-w-5xl w-full flat-card shadow-2xl relative cyber-glow-hover">
 
         {/* Header */}
-        <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold uppercase tracking-wide mb-2 !text-amber-accent">Hareekshith AS</h1>
+        <header className="text-center mb-8 pt-4">
+          <div className="absolute top-0 left-0 right-0 h-8 bg-black/40 border-b border-white/10 flex items-center px-4">
+            <div className="flex gap-2">
+              <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+            </div>
+            <div className="mx-auto text-xs font-mono text-gray-500 tracking-widest">/bin/bash - Hareekshith</div>
+          </div>
+          <h1 className="text-3xl font-mono uppercase tracking-wide mb-2 mt-4 !text-amber-accent">Hareekshith AS</h1>
           <div className="text-sm flex flex-wrap justify-center items-center text-gray-400">
             <a href="https://github.com/hareekshith" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">github.com/hareekshith</a>
             <span className="mx-2">|</span>
@@ -33,6 +41,18 @@ const Resume = () => {
             <a href="https://linkedin.com/in/Hareekshith-tzzs3118" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">linkedin.com/in/Hareekshith-tzzs3118</a>
           </div>
         </header>
+          
+        {/* Projects */}
+        <section className="mb-6">
+          <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Objective</h2>
+          <div className="mb-4">
+            <p>I am a sophomore Engineering student in B.Tech specializing in Cyber-Security, with a focus on applying knowledge through
+innovative projects. I possess strong programming skills, including hands-on experience in network scanning and SIEM analysis.
+With introductory experience in Cyber-Security projects, I aspire to contribute my skills in an exciting entry-level role while
+continuing to grow professionally.</p>
+          </div>
+        </section>
+
 
         {/* Technical Skills */}
         <section className="mb-6">
@@ -141,7 +161,18 @@ const Resume = () => {
             </div>
           </div>
         </section>
-
+        
+        {/* Projects */}
+        <section className="mb-6">
+          <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Extra-Curricular Activities</h2>
+          <div className="mb-4">
+            <div className="font-bold mb-1 text-white">ACM Student Chapter (ACMSC), VIT Chennai</div>
+            <ul className="list-disc pl-5 space-y-1 text-[0.95rem] text-soft-white">
+              <li>Coordinated “Server-Surfers” (Kaspersky KIPS) and a follow-up CTF, contributing to challenge design and execution.</li>
+              <li>Maintain the student chapter’s official website, ensuring regular updates and reliability.</li>
+            </ul>
+          </div>
+        </section>
       </article>
     </div>
   );

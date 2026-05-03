@@ -14,39 +14,98 @@ const socialLinks = [
 
 const SocialsPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4">
-      <h1 id="tit" className="text-coral-title text-4xl sm:text-6xl font-title text-center my-8 
-                          underline decoration-golden-highlight decoration-4">
-        Socials
+    <div className="max-w-4xl mx-auto px-4 pb-20">
+      
+      {/* Title */}
+      <h1 className="text-4xl sm:text-5xl font-mono text-center my-12 text-white flex justify-center items-center gap-3">
+        <span className="text-amber-accent">{'>'}</span>
+        ping -c 4 socials
+        <span className="blinking-cursor text-amber-accent">█</span>
       </h1>
-      <h5 className="text-soft-white text-center font-body mb-12">
-        Connect with me from these platforms!
+      
+      <h5 className="text-gray-400 text-center font-mono mb-12 italic border-b border-white/10 pb-6 w-3/4 sm:w-1/2 mx-auto">
+        // Establish connection via available ports:
       </h5>
 
-      <div id="con" className="flex flex-col gap-6">
+      {/* Links Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-20">
         {socialLinks.map((link, index) => (
-          <div 
+          <a 
             key={index} 
-            className="link bg-warm-brown h-20 rounded-lg transition duration-300 grid grid-cols-[80px_1fr] md:grid-cols-[100px_1fr] items-center text-soft-white 
-                       hover:bg-vivid-orange hover:text-soft-white hover:text-xl 
-                       mx-4 md:mx-10"
+            href={link.url}
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-6 bg-warm-brown h-20 px-6 border border-white/10 cyber-glow-hover text-soft-white hover:text-white transition-all duration-300 group"
           >
-            <img 
-              src={link.icon} 
-              alt={link.name} 
-              className="h-10 w-10 flex-shrink-0 object-contain ml-4 md:ml-6 transition-all duration-300 sm:h-8" 
-            />
-            <a 
-              href={link.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex justify-center items-center font-body h-full w-full text-soft-white text-lg md:text-xl no-underline"
-            >
+            <div className="scanline-container h-10 w-10 flex-shrink-0">
+              <img 
+                src={link.icon} 
+                alt={link.name} 
+                className="h-full w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500" 
+              />
+            </div>
+            <span className="font-mono text-lg uppercase tracking-widest group-hover:text-amber-accent transition-colors">
               {link.name}
-            </a>
-          </div>
+            </span>
+          </a>
         ))}
       </div>
+
+      {/* Contact Form */}
+      <div className="border border-white/10 bg-warm-brown p-8 md:p-12 relative cyber-glow-hover">
+        <div className="absolute top-0 left-0 right-0 h-1 bg-amber-accent/30"></div>
+        <h2 className="text-2xl font-mono text-white mb-8 flex items-center gap-3 border-b border-white/10 pb-4">
+          <span className="text-amber-accent">{'>'}</span>
+          ./initiate_contact.sh
+        </h2>
+        
+        {/* Form powered by formsubmit.co */}
+        <form action="https://formsubmit.co/hareekshith@gmail.com" method="POST" className="flex flex-col gap-6">
+          {/* Formsubmit hidden fields */}
+          <input type="text" name="_honey" style={{ display: 'none' }} />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          {/* The next parameter redirects the user back to the socials page after success */}
+          <input type="hidden" name="_next" value={window.location.origin + "/soc"} /> 
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex flex-col">
+              <label className="text-amber-accent font-mono text-sm mb-2">NAME=</label>
+              <input 
+                type="text" 
+                name="name" 
+                required 
+                className="bg-mocha-dark border border-white/10 p-3 text-white font-mono focus:border-amber-accent focus:outline-none transition-colors" 
+                placeholder='"Guest"' 
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-amber-accent font-mono text-sm mb-2">EMAIL=</label>
+              <input 
+                type="email" 
+                name="email" 
+                required 
+                className="bg-mocha-dark border border-white/10 p-3 text-white font-mono focus:border-amber-accent focus:outline-none transition-colors" 
+                placeholder='"guest@local.host"' 
+              />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <label className="text-amber-accent font-mono text-sm mb-2">PAYLOAD=</label>
+            <textarea 
+              name="message" 
+              required 
+              rows="5" 
+              className="bg-mocha-dark border border-white/10 p-3 text-white font-mono focus:border-amber-accent focus:outline-none transition-colors resize-y" 
+              placeholder='Enter message data...'
+            ></textarea>
+          </div>
+          <button type="submit" className="btn-primary self-start mt-4 gap-2">
+            [ TRANSMIT_PACKET ]
+          </button>
+        </form>
+      </div>
+
     </div>
   );
 };
