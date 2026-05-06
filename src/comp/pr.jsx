@@ -5,63 +5,54 @@ const projectsData = [
     title: 'Keylogger Detector',
     paragraph: 'A utility, developed only for linux(for now) to detect keyloggers based on Heuristics',
     link: 'https://github.com/Hareekshith/keylogger-detection',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/keylogger-detection/main/poster_final.webp',
     category: 'Cyber Security',
   },
   {
     title: 'TEED-TS-WEB',
     paragraph: 'A full-stack project which detects and displays entry and exit logs with data visualizations',
     link: 'https://github.com/Hareekshith/TEED-TS-WEB',
-    imgSrc: 'https://raw.githubusercontent.com/Hareekshith/TEED-TS-WEB/main/screenshot/teeds.png',
     category: 'Web Development',
   },
   {
     title: 'TimeTable-Generator',
     paragraph: 'A full-stack project that gets input from the user and generate a more equally weighed timetable!',
     link: 'https://github.com/hareekshith/TimeTable-Generator',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/TimeTable-Generator/main/poster_final.webp',
     category: 'Web Development',
   },
   {
     title: 'Home CS LAB',
     paragraph: 'A project which helps blue-team professionals to study and fix the unknown vulnerabilities',
     link: 'https://github.com/hareekshith/Home_CS_LAB',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/blue-team-docker/main/Home_CS_LAB.webp',
     category: ['Cyber Security', 'Networks'],
   },
   {
     title: 'Prufung-AI',
     paragraph: 'A project which focuses on AI-Based question generation and result analysis having 3 difficulties',
     link: 'https://github.com/hareekshith/Prufung',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/Prufung/main/poster_final.webp',
     category: 'Web Development',
   },
   {
     title: 'PacketSniffer',
     paragraph: 'A small task which was given to me which analyses the network packet and payloads, using scapy.',
     link: 'https://github.com/hareekshith/PacketSniffer',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/PacketSniffer/main/poster_final.webp',
     category: 'Networks',
   },
   {
     title: 'CodeReviewer',
     paragraph: 'A project which reviews a python-based backend codes, and suggests(some) the alternative save versions',
     link: 'https://github.com/hareekshith/CodeReviewer',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/CodeReviewer/main/poster_final.webp',
     category: 'Cyber Security',
   },
   {
     title: 'NetSentinel',
     paragraph: 'A tool made using Python which detects SYN_flood and Portscans on a host computer, using scapy.',
     link: 'https://github.com/Hareekshith/NetSentinel',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/NetSentinel/main/poster_final.webp',
     category: ['Networks', 'Cyber Security'],
   },
   {
     title: 'ApriNet',
     paragraph: 'A tool uses Apriori Association Rule to study the normal pattern of the capture network packets.',
     link: 'https://github.com/Hareekshith/ApriNet',
-    imgSrc: 'https://raw.githubusercontent.com/hareekshith/ApriNet/main/poster_final.webp',
     category: 'Networks',
   }
 ];
@@ -129,14 +120,6 @@ const ProjectsSection = () => {
                 rel="noopener noreferrer"
                 className="group block border border-white/10 bg-warm-brown cyber-glow-hover relative overflow-hidden"
             >
-              {/* Image Area */}
-              <div className="h-64 overflow-hidden border-b border-white/10 scanline-container">
-                <img
-                  className="w-full h-full object-cover grayscale transition-transform duration-500 group-hover:scale-105 group-hover:grayscale-0"
-                    src={project.imgSrc}
-                    alt={project.title}
-                  />
-                </div>
 
                 {/* Text Area */}
                 <div className="p-6">

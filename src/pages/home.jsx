@@ -5,7 +5,7 @@ import TimelineSection from '../comp/time';
 
 const Home = () => {
   const avatarPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/avatar.webp';
-  const pfpPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/pfp.webp';
+  const pfpPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/pfp.jpeg';
 
   return (
     <div className="max-w-7xl mx-auto px-6 pb-20">
@@ -51,7 +51,7 @@ const Home = () => {
            <img 
             src={pfpPath} 
             alt="Profile" 
-            className="w-full aspect-square object-cover grayscale border border-white/10"
+            className="w-full aspect-square object-cover border border-white/10"
           />
         </div>
         
@@ -62,14 +62,12 @@ const Home = () => {
     <span className="blinking-cursor ml-1 text-amber-accent">█</span>
   </h3>
   <p className="text-gray-300 text-lg leading-relaxed text-justify">
-    Hello, I am Hareekshith, a defensive security enthusiast. I actively learn and apply my skills by building practical projects and experimenting with real-world scenarios. I have set up a home cybersecurity lab to explore vulnerabilities and understand how to identify and mitigate them.<br /><br />
-    
-    I have participated in multiple Capture The Flag (CTF) competitions to gain exposure to different types of attacks, how they are executed, and their impact on systems. Using this knowledge, I focus on analyzing and mitigating common security vulnerabilities.
+    Hello, I am Hareekshith, a defensive security enthusiast. I actively learn and apply my skills by building practical projects and experimenting with real-world scenarios. I have participated in multiple Capture The Flag (CTF) competitions to gain exposure to different types of attacks, how they are executed, and their impact on systems. Using this knowledge, I focus on analyzing and mitigating common security vulnerabilities.
   </p>
 </div>
       </section>
       {/* 3. Timeline Section */}
-      <h3 className="text-3xl font-mono text-white mb-6 text-center flex justify-center items-center gap-4">
+      <h3 className="text-3xl font-mono text-white text-center flex justify-center items-center gap-4">
         <span className="text-amber-accent">{'>'}</span>
         head -n 3 timeline.log
         <span className="blinking-cursor ml-1 text-amber-accent">█</span>

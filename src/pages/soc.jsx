@@ -37,7 +37,7 @@ const SocialsPage = () => {
             rel="noopener noreferrer" 
             className="flex items-center gap-6 bg-warm-brown h-20 px-6 border border-white/10 cyber-glow-hover text-soft-white hover:text-white transition-all duration-300 group"
           >
-            <div className="scanline-container h-10 w-10 flex-shrink-0">
+            <div className=" h-10 w-10 flex-shrink-0">
               <img 
                 src={link.icon} 
                 alt={link.name} 
