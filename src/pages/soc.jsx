@@ -14,16 +14,16 @@ const socialLinks = [
 
 const SocialsPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 pb-20">
+    <div className="max-w-4xl mx-auto px-4 pb-10">
       
       {/* Title */}
-      <h1 className="text-4xl sm:text-5xl font-mono text-center my-12 text-white flex justify-center items-center gap-3">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono text-center my-10 text-white flex flex-wrap justify-center items-center gap-2 md:gap-3">
         <span className="text-amber-accent">{'>'}</span>
-        ping -c 4 socials
+        [ SOCIALS ]
         <span className="blinking-cursor text-amber-accent">█</span>
       </h1>
       
-      <h5 className="text-gray-400 text-center font-mono mb-12 italic border-b border-white/10 pb-6 w-3/4 sm:w-1/2 mx-auto">
+      <h5 className="text-gray-400 text-sm md:text-base text-center font-mono mb-12 italic border-b border-white/10 pb-6 w-11/12 sm:w-3/4 md:w-1/2 mx-auto">
         // Establish connection via available ports:
       </h5>
 
@@ -52,7 +52,7 @@ const SocialsPage = () => {
       </div>
 
       {/* Contact Form */}
-      <div className="border border-white/10 bg-warm-brown p-8 md:p-12 relative cyber-glow-hover">
+      <div className="border border-white/10 bg-warm-brown p-6 md:p-12 relative cyber-glow-hover">
         <div className="absolute top-0 left-0 right-0 h-1 bg-amber-accent/30"></div>
         <h2 className="text-2xl font-mono text-white mb-8 flex items-center gap-3 border-b border-white/10 pb-4">
           <span className="text-amber-accent">{'>'}</span>

@@ -8,7 +8,7 @@ const Home = () => {
   const pfpPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/pfp.webp';
 
   return (
-    <div className="max-w-7xl mx-auto px-6 pb-20">
+    <div className="max-w-7xl mx-auto px-6 pb-10">
       
       {/* 1. Hero Section: Split Layout (Text Left / Image Right) */}
       <section className="min-h-[85vh] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center border-b border-white/5 mb-20">
@@ -19,7 +19,7 @@ const Home = () => {
             [ STATUS: SECURE ]
           </div>
           
-          <h1 className="text-4xl md:text-8xl font-bold text-white leading-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-8xl font-bold text-white leading-none mb-8">
             Hareekshith<span className="text-amber-accent">.</span><br/>
           </h1>
           
@@ -35,7 +35,7 @@ const Home = () => {
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative">
           <div className="relative w-full max-w-[500px] aspect-square scanline-container">
             {/* Simple solid border frame effect */}
-            <div className="absolute inset-0 border-2 border-white/10 translate-x-4 translate-y-4 z-0"></div>
+            <div className="absolute inset-0 border-2 border-white/10 md:translate-x-4 md:translate-y-4 z-0"></div>
             <img 
               src={avatarPath} 
               alt="Avatar" 
@@ -56,10 +56,10 @@ const Home = () => {
         </div>
         
         <div className="flex flex-col justify-center">
-  <h3 className="text-3xl font-mono text-white mb-6 flex items-center gap-4">
+  <h3 className="text-3xl md:text-5xl font-mono text-white mb-6 flex flex-wrap items-center gap-2 md:gap-4">
     <span className="text-amber-accent">{'>'}</span>
-    whoami
-    <span className="blinking-cursor ml-1 text-amber-accent">█</span>
+    [ ABOUT ]
+    <span className="blinking-cursor text-amber-accent">█</span>
   </h3>
   <p className="text-gray-300 text-lg leading-relaxed text-justify">
     Hello, I am Hareekshith, a defensive security enthusiast. I actively learn and apply my skills by building practical projects and experimenting with real-world scenarios. I have participated in multiple Capture The Flag (CTF) competitions to gain exposure to different types of attacks, how they are executed, and their impact on systems. Using this knowledge, I focus on analyzing and mitigating common security vulnerabilities.
@@ -67,10 +67,10 @@ const Home = () => {
 </div>
       </section>
       {/* 3. Timeline Section */}
-      <h3 className="text-3xl font-mono text-white text-center flex justify-center items-center gap-4">
+      <h3 className="text-3xl md:text-5xl font-mono text-white text-center flex flex-wrap justify-center items-center gap-2 md:gap-4">
         <span className="text-amber-accent">{'>'}</span>
-        head -n 3 timeline.log
-        <span className="blinking-cursor ml-1 text-amber-accent">█</span>
+        [ TIMELINE ]
+        <span className="blinking-cursor text-amber-accent">█</span>
       </h3>
       <TimelineSection isFullTimeline={false} />
     </div>
