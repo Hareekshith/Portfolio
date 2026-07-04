@@ -59,7 +59,7 @@ continuing to grow professionally.</p>
           <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Technical Skills</h2>
           <div className="text-[0.95rem] space-y-1.5 text-soft-white">
             <div><span className="font-bold text-white">Languages:</span> C/C++, Python, Java</div>
-            <div><span className="font-bold text-white">Security &amp; Networks:</span> Nmap, Wireshark, OpenVAS, UFW, iptables, Scapy</div>
+            <div><span className="font-bold text-white">Security &amp; Networks:</span> Nmap, Wireshark, OpenVAS, UFW, iptables, Scapy, Wazuh, ELK</div>
             <div><span className="font-bold text-white">Frameworks &amp; Libraries:</span> Next.js, React, Node.js, Flask</div>
             <div><span className="font-bold text-white">Platforms:</span> Docker, Cisco Packet Tracer, Vercel, Render, Git, VirtualBox</div>
             <div><span className="font-bold text-white">Database:</span> MySQL, PostgreSQL, MongoDB</div>
@@ -69,7 +69,20 @@ continuing to grow professionally.</p>
         {/* Experience */}
         <section className="mb-6">
           <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Internship</h2>
-
+          <div className="mb-3">
+            <div className="flex justify-between items-end">
+              <span className="font-bold text-white">Cyber-Security Intern</span>
+              <span className="text-sm font-semibold text-gray-400">22 June 2026 – 3 July 2026</span>
+            </div>
+            <div className="flex justify-between items-end text-soft-white italic mb-2">
+              <span>ISRO ISSDC, Banglore, India</span>
+              <span className="text-sm">Offline</span>
+            </div>
+            <ul className="list-disc pl-5 space-y-1 text-[0.95rem] text-soft-white">
+              <li>Proposed an architecture for an "AI-Assisted Zero Trust Cyber Resilient Science Data Center".</li>
+              <li>Studied, implemented and analyzed the SIEMs and their data collected in an isolated test server.</li>
+            </ul>
+          </div>
           <div>
             <div className="flex justify-between items-end">
               <span className="font-bold text-white">Cyber-Security Intern</span>
@@ -140,8 +153,8 @@ continuing to grow professionally.</p>
               <span className="text-sm font-semibold text-gray-400">Chennai, India</span>
             </div>
             <div className="flex justify-between items-end text-soft-white italic">
-              <span>Pursuing 4th Semester Computer Science - Cyber Security
-                <span className="text-gray-400 text-[0.85rem] ml-2">(CGPA - 8.56 / 3rd semester)</span>
+              <span>Pursuing 5th Semester Computer Science - Cyber Security
+                <span className="text-gray-400 text-[0.85rem] ml-2">(CGPA - 8.50 / 4th semester)</span>
               </span>
               <span className="text-sm">Aug 2024-Jul 2028</span>
             </div>
