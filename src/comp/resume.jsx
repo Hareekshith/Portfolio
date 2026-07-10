@@ -46,7 +46,7 @@ const Resume = () => {
         <section className="mb-6">
           <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Objective</h2>
           <div className="mb-4">
-            <p>I am a sophomore Engineering student in B.Tech specializing in Cyber-Security, with a focus on applying knowledge through
+            <p>I am a Pre-Final year Engineering student in B.Tech specializing in Cyber-Security, with a focus on applying knowledge through
 innovative projects. I possess strong programming skills, including hands-on experience in network scanning and SIEM analysis.
 With introductory experience in Cyber-Security projects, I aspire to contribute my skills in an exciting entry-level role while
 continuing to grow professionally.</p>
