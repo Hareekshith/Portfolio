@@ -34,9 +34,10 @@ const skillsData = [
   {
     title: "Networking",
     paragraph: "Understanding the flow of data from the tiniest packet to the vast digital ocean.",
-    accent: "Cisco_Packet_Tracer, WireShark",
+    accent: "Cisco_Packet_Tracer, NMAP, WireShark",
     images: [
       { src: '/img/cpt.svg', alt: 'cpt' },
+      { src: '/img/nmap.svg', alt: 'nmap'},
       { src: '/img/ws.svg', alt: 'ws', fullWidth: true },
     ],
   },
