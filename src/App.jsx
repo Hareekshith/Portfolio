@@ -7,10 +7,15 @@ import ExperiencePage from './pages/exp';
 import SocialsPage from './pages/soc';
 import TimelinePage from './pages/tl';
 import Resume from './comp/resume';
+import BackgroundGrid from './comp/BackgroundGrid';
+import ArchTerminal from './comp/ArchTerminal';
 
 function App() {
   return (
     <Router>
+      {/* Interactive background grid overlay for easter egg triggers */}
+      <BackgroundGrid />
+
       {/* Header and Footer are persistent across pages */}
       <Header />
       
@@ -21,6 +26,7 @@ function App() {
           <Route path="/soc" element={<SocialsPage />} />
           <Route path="/tl" element={<TimelinePage />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/terminal" element={<ArchTerminal />} />
           {/* Fallback route */}
           <Route path="*" element={<Home />} /> 
         </Routes>
