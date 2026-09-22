@@ -68,7 +68,7 @@ const ArchTerminal = () => {
       ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#00ff66';
+      ctx.fillStyle = '#d97706';
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
@@ -339,7 +339,7 @@ const ArchTerminal = () => {
         );
         break;
 
-      case 'cat':
+      case 'cat': {
         const filename = args[0];
         if (filename === 'flag.txt') {
           newOutputs.push({ type: 'success', text: 'flag{h4r33ksh1th_arch_1s0_c1ick3d_5ucc355fully}' });
@@ -355,6 +355,7 @@ const ArchTerminal = () => {
           newOutputs.push({ type: 'error', text: `cat: ${filename}: No such file or directory` });
         }
         break;
+      }
 
       case 'whoami':
         newOutputs.push({ type: 'info', text: 'guest@hareekshith-portfolio' });
@@ -389,32 +390,32 @@ const ArchTerminal = () => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black text-gray-200 font-mono z-50 flex flex-col overflow-hidden">
+    <div className="fixed inset-0 bg-[#090a0f] text-gray-200 font-mono z-50 flex flex-col overflow-hidden">
       {/* Terminal Top Window Bar */}
-      <div className="bg-[#111113] border-b border-white/10 px-4 py-2 flex items-center justify-between z-50 flex-shrink-0 select-none">
+      <div className="bg-[#11131b] border-b border-white/10 px-4 py-2.5 flex items-center justify-between z-50 flex-shrink-0 select-none">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block cursor-pointer" onClick={() => navigate('/')} title="Exit Terminal" />
-            <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
-            <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#d97706] inline-block cursor-pointer hover:opacity-100 transition-opacity" onClick={() => navigate('/')} title="Exit Terminal" />
+            <span className="w-2.5 h-2.5 rounded-full bg-white/40 inline-block" />
+            <span className="w-2.5 h-2.5 rounded-full bg-white/20 inline-block" />
           </div>
-          <span className="text-xs font-bold text-gray-300 tracking-wider">
-            root@archiso: ~ (tty1) - Hareekshith Arch Linux Setup
+          <span className="text-xs font-semibold text-white tracking-wider">
+            root@archiso: ~ (tty1) - Hareekshith Arch Linux
           </span>
         </div>
 
         <div className="flex items-center gap-3">
           <button 
             onClick={() => setOutputs([])}
-            className="text-[11px] uppercase tracking-wider px-2 py-0.5 border border-white/20 text-gray-300 hover:text-white transition-colors"
+            className="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors"
           >
-            [ CLEAR ]
+            Clear
           </button>
           <button 
             onClick={() => navigate('/')}
-            className="text-[11px] uppercase tracking-wider px-3 py-0.5 bg-amber-accent text-black font-bold hover:bg-white transition-colors"
+            className="text-[11px] uppercase tracking-wider px-3 py-1 rounded bg-[#d97706] text-white font-bold hover:bg-white hover:text-black transition-colors"
           >
-            [ EXIT TO PORTFOLIO ◄ ]
+            Exit Terminal &rarr;
           </button>
         </div>
       </div>
@@ -423,7 +424,7 @@ const ArchTerminal = () => {
       {matrixMode && (
         <div className="relative inset-0 w-full h-full bg-black z-50 cursor-pointer" onClick={() => setMatrixMode(false)}>
           <canvas ref={canvasRef} className="block w-full h-full" />
-          <div className="absolute top-4 right-4 bg-black/90 text-green-400 border border-green-500 px-3 py-1 text-xs font-mono">
+          <div className="absolute top-4 right-4 bg-black/90 text-[#d97706] border border-[#d97706] px-3 py-1 text-xs font-mono">
             [ MATRIX MODE - CLICK OR PRESS ESC TO EXIT ]
           </div>
         </div>
@@ -431,37 +432,37 @@ const ArchTerminal = () => {
 
       {/* Plain Black Terminal Content Screen */}
       {!matrixMode && (
-        <div className="flex-grow p-4 md:p-6 overflow-y-auto font-mono text-sm space-y-1 z-30 bg-black selection:bg-amber-accent selection:text-black">
+        <div className="flex-grow p-4 md:p-6 overflow-y-auto font-mono text-sm space-y-1 z-30 bg-[#090a0f] selection:bg-[#d97706] selection:text-white">
           {outputs.map((line, idx) => {
             if (line.type === 'input') {
-              return <div key={idx} className="text-amber-accent font-bold mt-2">{line.text}</div>;
+              return <div key={idx} className="text-[#d97706] font-bold mt-2">{line.text}</div>;
             } else if (line.type === 'banner') {
-              return <div key={idx} className="text-cyan-400 font-bold">{line.text}</div>;
+              return <div key={idx} className="text-white font-bold">{line.text}</div>;
             } else if (line.type === 'highlight') {
-              return <div key={idx} className="text-amber-400 font-bold">{line.text}</div>;
+              return <div key={idx} className="text-[#d97706] font-bold">{line.text}</div>;
             } else if (line.type === 'prompt_wizard') {
-              return <div key={idx} className="text-cyan-300 font-bold mt-2">{line.text}</div>;
+              return <div key={idx} className="text-white font-bold mt-2">{line.text}</div>;
             } else if (line.type === 'info') {
-              return <div key={idx} className="text-gray-300">{line.text}</div>;
+              return <div key={idx} className="text-white/80">{line.text}</div>;
             } else if (line.type === 'cmd_help') {
-              return <div key={idx} className="text-emerald-400">{line.text}</div>;
+              return <div key={idx} className="text-white font-semibold">{line.text}</div>;
             } else if (line.type === 'neofetch') {
-              return <div key={idx} className="text-sky-400 whitespace-pre">{line.text}</div>;
+              return <div key={idx} className="text-[#d97706] whitespace-pre">{line.text}</div>;
             } else if (line.type === 'success') {
-              return <div key={idx} className="text-emerald-400 font-semibold">{line.text}</div>;
+              return <div key={idx} className="text-[#d97706] font-semibold">{line.text}</div>;
             } else if (line.type === 'error') {
-              return <div key={idx} className="text-red-400">{line.text}</div>;
+              return <div key={idx} className="text-white font-semibold">{line.text}</div>;
             }
-            return <div key={idx} className="text-gray-400">{line.text}</div>;
+            return <div key={idx} className="text-white/70">{line.text}</div>;
           })}
 
           {/* Installation Progress Bar */}
           {installStep === 'installing' && (
             <div className="my-3 space-y-1">
-              <div className="text-cyan-400 text-xs font-bold">Installing Hareekshith Environment...</div>
-              <div className="w-full max-w-xl bg-gray-900 h-4 border border-cyan-500 overflow-hidden relative">
+              <div className="text-white text-xs font-bold">Installing Hareekshith Environment...</div>
+              <div className="w-full max-w-xl bg-gray-900 h-4 border border-[#d97706] overflow-hidden relative">
                 <div 
-                  className="bg-amber-accent h-full transition-all duration-300 flex items-center justify-center text-[10px] text-black font-bold"
+                  className="bg-[#d97706] h-full transition-all duration-300 flex items-center justify-center text-[10px] text-white font-bold"
                   style={{ width: `${installProgress}%` }}
                 >
                   {installProgress}%
@@ -472,7 +473,7 @@ const ArchTerminal = () => {
 
           {/* Interactive Shell Input Line */}
           <div className="flex items-center gap-2 pt-2">
-            <span className="text-amber-accent font-bold flex-shrink-0">
+            <span className="text-[#d97706] font-bold flex-shrink-0">
               {installStep && installStep !== 'done' ? 'archinstall >' : 'root@archiso ~ #'}
             </span>
             <input 
@@ -481,7 +482,7 @@ const ArchTerminal = () => {
               value={inputVal}
               onChange={(e) => setInputVal(e.target.value)}
               onKeyDown={handleKeyDown}
-              className="bg-transparent border-none outline-none text-white w-full font-mono text-sm caret-amber-accent"
+              className="bg-transparent border-none outline-none text-white w-full font-mono text-sm caret-[#d97706]"
               autoFocus
               spellCheck="false"
               autoComplete="off"

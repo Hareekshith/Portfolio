@@ -7,8 +7,7 @@ const TimelineSection = ({ isFullTimeline = false }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Determine which API endpoint to hit based on the prop
-    // This connects to the Flask Serverless function deployed on Vercel: /api/index.py
+    // Connect to the serverless API endpoint
     const endpoint = isFullTimeline ? '/api/timeline/all' : '/api/timeline/recent';
     
     fetch(endpoint) 
@@ -29,37 +28,82 @@ const TimelineSection = ({ isFullTimeline = false }) => {
       });
   }, [isFullTimeline]);
 
-  if (loading) return <div className="text-center text-amber-accent my-8 font-mono blinking-cursor">Loading timeline.log...</div>;
-  if (error) return <div className="text-center text-red-500 my-8 font-mono">[ ERROR: FAILED_TO_FETCH_LOGS ]</div>;
+  if (loading) {
+    return (
+      <div className="text-center text-[#d97706] my-12 font-mono text-sm flex items-center justify-center gap-2.5">
+        <span className="w-2 h-2 rounded-full bg-[#d97706] animate-ping"></span>
+        Synchronizing chronological event trace...
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center text-white my-12 font-mono text-sm border border-white/20 bg-white/5 py-4 px-6 rounded-xl max-w-md mx-auto">
+        {error}
+      </div>
+    );
+  }
 
   return (
-    <div id="time" className="my-10 bg-warm-brown border border-white/10 mx-0 sm:mx-4 md:mx-10 p-4 sm:p-6 lg:p-10 cyber-glow-hover relative">
-      <div className="absolute top-0 left-0 right-0 h-1 bg-amber-accent/30"></div>
+    <div id="time" className="my-6 sm:my-8 bg-[#0e1118]/95 border border-white/15 rounded-2xl mx-0 sm:mx-4 md:mx-10 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+      {/* Corner Brackets */}
+      <div className="hud-bracket hud-bracket-tl"></div>
+      <div className="hud-bracket hud-bracket-tr"></div>
+      <div className="hud-bracket hud-bracket-bl"></div>
+      <div className="hud-bracket hud-bracket-br"></div>
+
+      {/* Top Telemetry Line */}
+      <div className="flex items-center justify-between pb-4 sm:pb-6 mb-6 sm:mb-8 border-b border-white/10 text-xs font-mono text-white/70">
+        <div className="flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-[#d97706] animate-pulse"></span>
+          <span className="text-white font-semibold text-[11px] sm:text-xs">BUS_TRACE // EVENT_SEQUENCE</span>
+        </div>
+        <span className="text-[#d97706] font-mono text-[10px] sm:text-[11px] px-2 py-0.5 rounded bg-[#d97706]/10 border border-[#d97706]/30">
+          LOG_VERIFIED
+        </span>
+      </div>
       
-      {/* Timeline List */}
-      <div className="flex flex-col gap-6">
+      {/* Sequential Circuit Bus Stream */}
+      <div className="flex flex-col gap-6 sm:gap-8 relative pl-1 sm:pl-6">
         {entries.map((entry, index) => (
-          <div key={entry._id || index} className="relative pl-6 border-l border-dashed border-white/20 hover:border-amber-accent transition-colors duration-300">
-            <div className="absolute -left-[5px] top-2 w-2 h-2 bg-amber-accent"></div>
-            <h2 className="font-mono text-lg md:text-xl text-white mb-1 flex items-start gap-2">
-              <span className="text-amber-accent mt-0.5">{'>'}</span>
-              <span>{entry.title}</span>
-            </h2>
-            <h4 className="font-mono text-xs text-amber-accent mb-2 uppercase tracking-widest">[{entry.time}]</h4>
-            <p className="text-gray-400 font-mono text-sm leading-relaxed">{entry.desc}</p>
+          <div 
+            key={entry._id || index} 
+            className="relative pl-6 sm:pl-8 border-l-2 border-[#d97706]/40 hover:border-[#d97706] transition-colors duration-300 group"
+          >
+            {/* Concentric Circuit Node Junction Point */}
+            <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#08090d] border-2 border-[#d97706] flex items-center justify-center shadow-[0_0_10px_rgba(217,119,6,0.6)] group-hover:scale-125 transition-transform duration-300">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#d97706] group-hover:bg-white"></div>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-1.5">
+              <h2 className="text-base sm:text-lg md:text-xl font-bold text-white group-hover:text-[#d97706] transition-colors font-mono break-words">
+                {entry.title}
+              </h2>
+              <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-wider text-[#d97706] px-2 py-0.5 rounded-md bg-[#d97706]/10 border border-[#d97706]/30">
+                {entry.time}
+              </span>
+            </div>
+
+            <p className="text-white/70 text-xs sm:text-sm leading-relaxed font-light text-left">
+              {entry.desc}
+            </p>
           </div>
         ))}
       </div>
 
-      {/* Read More button (only on Home page) */}
+      {/* Read More Button (only on Home page) */}
       {!isFullTimeline && (
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-8 sm:mt-12 pt-6 border-t border-white/10">
           <Link 
             id="rm" 
             to="/tl" 
-            className="btn-primary bg-transparent border-2 border-amber-accent text-amber-accent hover:bg-amber-accent hover:text-white"
+            className="btn-primary gap-2 w-full sm:w-auto"
           >
-            [ EXTRACT_FULL_LOG ]
+            <span>Query Full Event Bus</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
           </Link>
         </div>
       )}

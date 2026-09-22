@@ -9,26 +9,30 @@ const Resume = () => {
         <a
           href="/ATS_Resume_Hareekshith.pdf"
           download="Hareekshith_Resume.pdf"
-          className="btn-primary gap-2"
+          className="btn-primary gap-2 shadow-lg"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
           </svg>
-          [ EXTRACT_DOSSIER ]
+          <span>Download Resume PDF</span>
         </a>
       </div>
 
-      <article className="max-w-5xl w-full flat-card shadow-2xl relative cyber-glow-hover">
+      <article className="max-w-5xl w-full flat-card shadow-2xl relative">
+        <div className="hud-bracket hud-bracket-tl"></div>
+        <div className="hud-bracket hud-bracket-tr"></div>
+        <div className="hud-bracket hud-bracket-bl"></div>
+        <div className="hud-bracket hud-bracket-br"></div>
 
         {/* Header */}
         <header className="text-center mb-8 pt-4">
-          <div className="absolute top-0 left-0 right-0 h-8 bg-black/40 border-b border-white/10 flex items-center px-4">
+          <div className="absolute top-0 left-0 right-0 h-8 bg-black/40 border-b border-white/10 flex items-center px-4 rounded-t-xl">
             <div className="flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-[#d97706]"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-white/40"></div>
+              <div className="w-2.5 h-2.5 rounded-full bg-white/20"></div>
             </div>
-            <div className="mx-auto text-xs font-mono text-gray-500 tracking-widest">/bin/bash - Hareekshith</div>
+            <div className="mx-auto text-xs font-mono text-gray-400 tracking-widest">/bin/bash - Hareekshith</div>
           </div>
           <h1 className="text-3xl font-mono uppercase tracking-wide mb-2 mt-4 !text-amber-accent">Hareekshith AS</h1>
           <div className="text-sm flex flex-wrap justify-center items-center text-gray-400">
@@ -42,7 +46,7 @@ const Resume = () => {
           </div>
         </header>
           
-        {/* Projects */}
+        {/* Objective */}
         <section className="mb-6">
           <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Objective</h2>
           <div className="mb-4">
@@ -52,7 +56,6 @@ With introductory experience in Cyber-Security projects, I aspire to contribute 
 continuing to grow professionally.</p>
           </div>
         </section>
-
 
         {/* Technical Skills */}
         <section className="mb-6">
@@ -175,7 +178,7 @@ continuing to grow professionally.</p>
           </div>
         </section>
         
-        {/* Projects */}
+        {/* Extra-Curricular */}
         <section className="mb-6">
           <h2 className="text-[1.15rem] font-bold uppercase border-b-[1.5px] border-amber-accent/40 mb-3 pb-1 !text-amber-accent">Extra-Curricular Activities</h2>
           <div className="mb-4">

@@ -3,23 +3,19 @@ import { ReactTyped } from "react-typed";
 
 const TypedText = () => {
   return (
-    <h1 
-      // Removed 'h-10' and 'inline-block' classes
-      className="font-title text-3xl sm:text-4xl inline-block" 
-    >
+    <span className="font-mono text-2xl sm:text-3xl text-[#d97706] font-semibold tracking-tight inline-block">
       <ReactTyped
-        className="text-amber-accent"
         strings={[
           "Monitor.", 
           "Exploit.", 
           "Analyse.",
           "Repeat."
         ]}
-        typeSpeed={50}
-        backSpeed={15}
+        typeSpeed={55}
+        backSpeed={25}
         loop
       />
-    </h1>
+    </span>
   );
 };
 

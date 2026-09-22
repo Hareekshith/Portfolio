@@ -2,9 +2,9 @@ import React from 'react';
 
 const skillsData = [
   {
-    title: 'Code',
-    paragraph: 'Programming is my jam these tools are my partners in code crimes!',
-    accent: 'Git, Github, Neovim',
+    title: 'Code & Environments',
+    paragraph: 'Programming workflow essentials and developer environments for efficient daily operations.',
+    accent: 'Git, GitHub, Neovim',
     images: [
       { src: '/img/git.svg', alt: 'git' },
       { src: '/img/gh.svg', alt: 'gh' },
@@ -12,8 +12,8 @@ const skillsData = [
     ],
   },
   {
-    title: 'Programming',
-    paragraph: 'Coding is dangerously addictive catch me doing it 25/8.',
+    title: 'Core Programming',
+    paragraph: 'Core systems and scripting languages used for vulnerability research and software engineering.',
     accent: 'C++, Java, Python',
     images: [
       { src: '/img/cpp.svg', alt: 'cpp' },
@@ -22,9 +22,9 @@ const skillsData = [
     ],
   },
   {
-    title: "Linux",
-    paragraph: "Linux is my playground where I geek out on code, security, and all things tech.",
-    accent: "Ubuntu, Arch, Kali",
+    title: 'Linux Kernel & Distros',
+    paragraph: 'Operating systems and security-focused distributions for testing, development, and forensics.',
+    accent: 'Ubuntu, Arch, Kali',
     images: [
       { src: '/img/ubuntu.svg', alt: 'ubuntu' },
       { src: '/img/arch.svg', alt: 'arch' },
@@ -32,9 +32,9 @@ const skillsData = [
     ],
   },
   {
-    title: "Networking",
-    paragraph: "Understanding the flow of data from the tiniest packet to the vast digital ocean.",
-    accent: "Cisco_Packet_Tracer, NMAP, WireShark",
+    title: 'Network Defense & Packets',
+    paragraph: 'Deep protocol analysis, traffic packet inspection, and active network defense infrastructure.',
+    accent: 'Packet Tracer, Nmap, Wireshark',
     images: [
       { src: '/img/cpt.svg', alt: 'cpt' },
       { src: '/img/nmap.svg', alt: 'nmap'},
@@ -42,8 +42,8 @@ const skillsData = [
     ],
   },
   {
-    title: 'Backend',
-    paragraph: "Making everything work behind the scenes because vibes alone don't run a website.",
+    title: 'Backend Systems',
+    paragraph: 'Scalable service architectures, microservices, and secure API endpoints.',
     accent: 'Django, Flask, FastAPI',
     images: [
       { src: '/img/dj.svg', alt: 'dj' },
@@ -52,9 +52,9 @@ const skillsData = [
     ],
   },
   {
-    title: 'Frontend',
-    paragraph: "Website looks? Powered by these! Still leveling up, but hey, we all start somewhere.",
-    accent: 'HTML, CSS, JS',
+    title: 'Frontend Interfaces',
+    paragraph: 'Modern client interfaces, responsive web standards, and component architectures.',
+    accent: 'HTML, CSS, JavaScript',
     images: [
       { src: '/img/html.svg', alt: 'html' },
       { src: '/img/css.svg', alt: 'css' },
@@ -62,8 +62,8 @@ const skillsData = [
     ],
   },
   {
-    title: 'Database',
-    paragraph: "Living for the data game organizing chaos, one query at a time.",
+    title: 'Data Persistence',
+    paragraph: 'Structured and document-based data management, schema design, and query optimization.',
     accent: 'MongoDB, MySQL, PostgreSQL',
     images: [
       { src: '/img/mongo.svg', alt: 'md' },
@@ -72,9 +72,9 @@ const skillsData = [
     ],
   },
   {
-    title: 'Design',
-    paragraph: "Putting heart, soul, and a dash of DIY into every pixel. That's why I'm obsessed!",
-    accent: 'Canva, Inkspace, Figma',
+    title: 'Visual Assets & UI',
+    paragraph: 'Vector design, system wireframing, and visual assets crafted for modern user interfaces.',
+    accent: 'Canva, Inkscape, Figma',
     images: [
       { src: '/img/canva.svg', alt: 'canv' },
       { src: '/img/inkscape.svg', alt: 'inks' },
@@ -85,45 +85,77 @@ const skillsData = [
 
 const SkillsSection = () => {
   return (
-    <section className="container mx-auto px-6 py-10">
-      <div className="flex items-center gap-4 mb-16">
-        <h1 className="text-3xl md:text-5xl font-mono text-white flex flex-wrap items-center gap-2 md:gap-3">
-          <span className="text-amber-accent">{'>'}</span>
-          [ SKILLS ]
-          <span className="blinking-cursor text-amber-accent">█</span>
+    <section className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      {/* Circuit Header */}
+      <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-12">
+        <span className="w-2.5 h-2.5 rounded-sm bg-[#d97706] shadow-[0_0_8px_rgba(217,119,6,0.8)]"></span>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white font-mono break-words">
+          Hardware & Software Toolsets
         </h1>
-        <div className="flex-grow h-[1px] bg-white/20 border-b border-dashed border-amber-accent/30"></div>
+        <div className="flex-grow h-[1px] bg-gradient-to-r from-[#d97706]/40 via-white/10 to-transparent"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {skillsData.map((skill, index) => (
-          <div key={index} className="flex flex-col items-start text-left group p-4 md:p-6 border border-white/10 cyber-glow-hover bg-warm-brown relative">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-amber-accent/30 group-hover:bg-amber-accent transition-colors duration-300"></div>
+          <div 
+            key={index} 
+            className="cyber-screen group flex flex-col justify-between"
+          >
+            {/* Corner Brackets */}
+            <div className="hud-bracket hud-bracket-tl"></div>
+            <div className="hud-bracket hud-bracket-tr"></div>
+            <div className="hud-bracket hud-bracket-bl"></div>
+            <div className="hud-bracket hud-bracket-br"></div>
 
-            {/* Icons Row */}
-            <div className="flex gap-6 mb-6 h-12 items-center">
-              {skill.images.map((img, idx) => (
-                <img
-                  key={idx}
-                  src={img.src}
-                  alt={img.alt}
-                  className="h-10 w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
-                />
-              ))}
+            {/* Top Screen Telemetry Bar */}
+            <div className="flex items-center justify-between px-3 sm:px-4 py-2 bg-black/60 border-b border-white/10 text-[10px] font-mono text-white/70 select-none">
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#d97706] group-hover:animate-ping"></span>
+                <span className="text-white font-semibold tracking-wider">MODULE // 0{index + 1}</span>
+              </div>
+              <span className="text-[#d97706] text-[9px] font-mono px-1.5 py-0.5 rounded bg-[#d97706]/10 border border-[#d97706]/30">
+                PORT_0x{((index + 1) * 16).toString(16).toUpperCase()}
+              </span>
             </div>
 
-            <h3 className="text-xl font-mono text-white mb-3 border-l-2 border-amber-accent pl-4">
-              {skill.title}<span className="text-xs text-gray-500 font-mono ml-2">.exe</span>
-            </h3>
+            {/* Card Body */}
+            <div className="p-4 sm:p-6">
+              {/* Circuit Icons Row */}
+              <div className="flex gap-2.5 sm:gap-3 mb-5 sm:mb-6 h-12 items-center">
+                {skill.images.map((img, idx) => (
+                  <div 
+                    key={idx} 
+                    className="p-2 rounded-lg bg-black/40 border border-white/10 group-hover:border-[#d97706]/50 transition-all duration-300"
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="h-6 sm:h-7 w-auto object-contain grayscale opacity-75 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"
+                    />
+                  </div>
+                ))}
+              </div>
 
-            <p className="text-gray-400 text-sm leading-relaxed mb-4 pl-4 border-l-2 border-transparent">
-              {skill.paragraph}
-            </p>
+              {/* Title */}
+              <h3 className="text-base sm:text-lg font-bold text-white mb-2 tracking-tight group-hover:text-[#d97706] transition-colors flex items-center gap-2">
+                <span>{skill.title}</span>
+              </h3>
 
-            <div className="pl-4">
-              <span className="text-amber-accent text-xs font-mono uppercase tracking-widest">
-                {skill.accent}
-              </span>
+              <p className="text-white/70 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 font-light">
+                {skill.paragraph}
+              </p>
+            </div>
+
+            {/* Bottom Hardware Bus Tags */}
+            <div className="px-4 sm:px-6 py-3 sm:py-4 bg-black/30 border-t border-white/5 flex flex-wrap gap-1.5 sm:gap-2">
+              {skill.accent.split(',').map((tech, i) => (
+                <span 
+                  key={i} 
+                  className="text-[10px] sm:text-[11px] font-mono px-2 sm:px-2.5 py-0.5 rounded bg-[#d97706]/10 border border-[#d97706]/30 text-[#d97706] group-hover:border-[#d97706] group-hover:text-white transition-colors"
+                >
+                  {tech.trim()}
+                </span>
+              ))}
             </div>
           </div>
         ))}

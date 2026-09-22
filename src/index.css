@@ -1,38 +1,51 @@
-/* 1. IMPORT FONTS (Fixes the loading issue) */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Source+Code+Pro:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+/* 1. IMPORT FONTS: Original Portfolio Trio (Space Mono, JetBrains Mono, Source Code Pro) */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  /* --- REFINED ORANGE PALETTE: Industrial Dark --- */
+  /* Background: Deep Obsidian */
+  --color-mocha-dark: #08090d;       
+  --color-warm-brown: #0e1118;       
   
-  /* Background: Deep Carbon (Neutral dark gray, less reddish than before) */
-  --color-mocha-dark: #09090b;       
-  
-  /* Card Background: Lighter Carbon */
-  --color-warm-brown: #18181b;       
-  
-  /* Primary Accent: Blaze Orange (High visibility, matches SVGs) */
-  --color-amber-accent: #f97316;     
-  
-  /* Button Color: Burnt Orange (Slightly darker for depth) */
-  --color-vivid-orange: #ea580c;     
-  
-  /* Titles: Crisp White (For maximum contrast against dark bg) */
+  /* Primary Accent: Strictly #d97706 */
+  --color-amber-accent: #d97706;     
+  --color-vivid-orange: #d97706;     
+  --color-golden-highlight: #d97706; 
+  --color-accent: #d97706;
+
+  /* Overrides for amber palette to strictly be #d97706 */
+  --color-amber-300: #d97706;
+  --color-amber-400: #d97706;
+  --color-amber-500: #d97706;
+  --color-amber-600: #d97706;
+
+  /* Headings: Crisp White */
   --color-coral-title: #ffffff;      
   
-  /* Body Text: Light Grey */
-  --color-soft-white: #a1a1aa;       
-  
-  /* Highlight: Golden Amber */
-  --color-golden-highlight: #f59e0b; 
+  /* Body Text: Slate White */
+  --color-soft-white: #e2e8f0;       
 
-  /* Fonts */
+  /* Original Font Family Hierarchy */
   --font-title: "Space Mono", monospace;
   --font-body: "JetBrains Mono", monospace;
   --font-mono-code: "Source Code Pro", monospace;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 2. BODY BACKGROUND: Clean Cyber Grid (Strictly #d97706 & Obsidian) */
 body {
   background-color: var(--color-mocha-dark);
   color: var(--color-soft-white);
@@ -41,139 +54,173 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  overflow-x: hidden;
   background-image: 
-    linear-gradient(rgba(249, 115, 22, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(249, 115, 22, 0.03) 1px, transparent 1px);
-  background-size: 30px 30px;
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(217, 119, 6, 0.16) 0%, transparent 70%),
+    linear-gradient(rgba(217, 119, 6, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 119, 6, 0.12) 1px, transparent 1px);
+  background-size: 100% 100%, 30px 30px, 30px 30px;
+  background-attachment: fixed, scroll, scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: var(--font-title);
   color: var(--color-coral-title);
-  letter-spacing: -0.03em; /* Tighter tracking for a technical look */
+  letter-spacing: -0.03em;
 }
 
 /* Custom Selection Color */
 ::selection {
-  background-color: var(--color-amber-accent);
-  color: #000;
+  background-color: #d97706;
+  color: #ffffff;
 }
 
-/* Structural Utilities */
+/* 3. STRUCTURAL CYBER HARDWARE & SCREEN COMPONENTS */
 @layer components {
-  /* Card Style: Darker, flatter, subtle border */
+  /* Hardware Screen / Cyber Deck Card (Smooth 2D GPU Accelerated) */
+  .cyber-screen {
+    @apply bg-[#0e1118]/90 border border-white/10 rounded-xl backdrop-blur-md relative overflow-hidden;
+    box-shadow: 
+      0 6px 20px -6px rgba(0, 0, 0, 0.7),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+  
+  .cyber-screen:hover {
+    border-color: #d97706;
+    transform: translateY(-4px);
+    box-shadow: 
+      0 14px 28px -10px rgba(0, 0, 0, 0.85),
+      0 0 22px -4px rgba(217, 119, 6, 0.3),
+      inset 0 1px 0 rgba(217, 119, 6, 0.3);
+  }
+
+  /* For Resume: Keep unchanged structure with refined subtle border */
   .flat-card {
-    @apply bg-warm-brown border border-white/5 p-6 md:p-8 rounded-none relative;
+    @apply bg-[#0e1118] border border-white/10 p-6 md:p-8 rounded-xl relative transition-all duration-300 shadow-2xl;
   }
   
   .flat-card::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
-    height: 2px;
-    background: var(--color-amber-accent);
-    opacity: 0.5;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d97706, transparent);
+    opacity: 0.8;
   }
-  
-  /* Button Style: Solid Orange, Industrial Look */
+
+  /* Sleek Tactile Cyber Button */
   .btn-primary {
-    @apply inline-flex items-center justify-center bg-transparent border-2 border-amber-accent text-amber-accent font-bold px-8 py-3 text-sm uppercase tracking-wider hover:bg-amber-accent hover:text-mocha-dark transition-all duration-300 rounded-none shadow-[0_0_15px_rgba(249,115,22,0.15)] hover:shadow-[0_0_25px_rgba(249,115,22,0.4)];
+    @apply inline-flex items-center justify-center font-semibold px-6 py-2.5 text-xs uppercase tracking-wider transition-all duration-200 rounded-lg cursor-pointer active:scale-95;
+    background-color: rgba(217, 119, 6, 0.12);
+    border: 1px solid rgba(217, 119, 6, 0.5);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(217, 119, 6, 0.15);
   }
 
-  /* Nav Links: Grey to White hover */
+  .btn-primary:hover {
+    background-color: #d97706;
+    color: #ffffff;
+    border-color: #d97706;
+    box-shadow: 0 0 25px rgba(217, 119, 6, 0.45);
+  }
+
+  /* Technical Screen HUD Corner Brackets */
+  .hud-bracket {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .hud-bracket-tl {
+    top: 6px; left: 6px;
+    border-top: 1.5px solid rgba(217, 119, 6, 0.5);
+    border-left: 1.5px solid rgba(217, 119, 6, 0.5);
+  }
+  .hud-bracket-tr {
+    top: 6px; right: 6px;
+    border-top: 1.5px solid rgba(217, 119, 6, 0.5);
+    border-right: 1.5px solid rgba(217, 119, 6, 0.5);
+  }
+  .hud-bracket-bl {
+    bottom: 6px; left: 6px;
+    border-bottom: 1.5px solid rgba(217, 119, 6, 0.5);
+    border-left: 1.5px solid rgba(217, 119, 6, 0.5);
+  }
+  .hud-bracket-br {
+    bottom: 6px; right: 6px;
+    border-bottom: 1.5px solid rgba(217, 119, 6, 0.5);
+    border-right: 1.5px solid rgba(217, 119, 6, 0.5);
+  }
+
+  .cyber-screen:hover .hud-bracket {
+    border-color: #d97706;
+    filter: drop-shadow(0 0 4px rgba(217, 119, 6, 0.7));
+  }
+
+  /* Nav Links */
   .nav-link {
-    @apply text-sm uppercase tracking-widest text-gray-500 hover:text-white hover:bg-white/5 px-3 py-1 transition-all duration-200;
+    @apply text-xs uppercase tracking-widest font-mono text-gray-400 hover:text-white px-3 py-1.5 rounded-md transition-all duration-200 hover:bg-white/5;
   }
-  
-  /* Active Link State helper (optional) */
-  .nav-link-active {
-    @apply text-amber-accent;
+
+  /* Cyber Status Badge with Telemetry */
+  .cyber-badge {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium tracking-wide;
+    background-color: rgba(217, 119, 6, 0.12);
+    border: 1px solid rgba(217, 119, 6, 0.4);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(217, 119, 6, 0.15);
   }
 }
 
-/* Cyber Security Animations and Utilities */
-@keyframes scanline {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100%); }
-}
-
-.scanline-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.scanline-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(to bottom, transparent, rgba(249, 115, 22, 0.2), transparent);
-  animation: scanline 4s linear infinite;
-  pointer-events: none;
-  z-index: 20;
-}
-
+/* Smooth Hardware-Accelerated Hover Glow */
 .cyber-glow-hover {
-  @apply transition-all duration-300;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .cyber-glow-hover:hover {
-  box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
-  border-color: var(--color-amber-accent);
-}
-
-.cyber-glitch-text {
-  text-shadow: 2px 0 var(--color-amber-accent), -2px 0 rgba(0,255,255,0.3);
-}
-
-.blinking-cursor {
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  box-shadow: 0 10px 28px -6px rgba(217, 119, 6, 0.25);
+  border-color: #d97706;
 }
 
 /* Mobile Dropdown Visibility */
 .ddc {
-    @apply hidden md:block; 
+  @apply hidden md:block; 
 }
 @media screen and (orientation: portrait) and (max-width: 920px) {
-    .ddc {
-        display: block;
-    }
+  .ddc {
+    display: block;
+  }
 }
+
+/* Sleek Minimalist Modern Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-mocha-dark); /* #09090b */
+  background: var(--color-mocha-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    var(--color-amber-accent), /* #f97316 */
-    var(--color-vivid-orange)  /* #ea580c */
-  );
+  background: rgba(217, 119, 6, 0.4);
   border-radius: 999px;
   border: 2px solid var(--color-mocha-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    #fb923c, /* slightly brighter amber */
-    #f97316
-  );
+  background: #d97706;
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-amber-accent) var(--color-mocha-dark);
+  scrollbar-color: #d97706 var(--color-mocha-dark);
 }

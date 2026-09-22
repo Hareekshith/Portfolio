@@ -16,27 +16,29 @@ const BackgroundGrid = () => {
   };
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-30 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-40 overflow-hidden">
       {/* 
-        Standalone Easter Egg Grid Button:
-        - Positioned absolutely in the background margin area outside page sections
-        - Simple square grid tile button with prompt symbol '>_'
+        Modern Cyber HUD Easter Egg Button:
+        - Sleek floating terminal shortcut
+        - Strictly #d97706 and white
       */}
       <div 
-        className="pointer-events-auto absolute top-24 right-4 md:right-8 lg:right-12 w-8 h-8 cursor-pointer transition-all duration-300 group"
+        className="pointer-events-auto absolute top-24 right-4 md:right-8 lg:right-12 cursor-pointer transition-all duration-300 group"
         onClick={handleBoxClick}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        title="[ Easter Egg: Arch ISO Terminal ]"
+        title="Interactive Terminal"
       >
-        <button className="w-full h-full border border-amber-accent/40 bg-[#09090b]/80 hover:bg-amber-accent hover:text-[#09090b] text-amber-accent font-mono text-xs flex items-center justify-center transition-all duration-300 shadow-[0_0_10px_rgba(249,115,22,0.15)] hover:shadow-[0_0_20px_rgba(249,115,22,0.5)]">
-          {'>_'}
+        <button className="h-9 px-3 rounded-lg border border-[#d97706]/40 bg-[#08090d]/90 backdrop-blur-md hover:bg-[#d97706] hover:text-white text-[#d97706] font-mono text-xs flex items-center gap-1.5 transition-all duration-300 shadow-[0_0_15px_rgba(217,119,6,0.2)] hover:shadow-[0_0_25px_rgba(217,119,6,0.5)] hover:-translate-y-0.5">
+          <span className="font-bold">{'>_'}</span>
+          <span className="hidden sm:inline text-[11px] font-medium tracking-wide">tty1</span>
         </button>
 
         {/* Floating tooltip badge on hover */}
         {hovered && (
-          <div className="absolute top-10 right-0 whitespace-nowrap bg-[#09090b] text-amber-accent border border-amber-accent text-[10px] font-mono px-2 py-0.5 shadow-[0_0_12px_rgba(249,115,22,0.4)] z-50">
-            [ ⚡ arch_tty1 ]
+          <div className="absolute top-11 right-0 whitespace-nowrap bg-[#0e1118] text-white border border-[#d97706] text-[11px] font-mono px-2.5 py-1 rounded-md shadow-[0_8px_20px_rgba(0,0,0,0.8)] z-50 flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#d97706] animate-pulse"></span>
+            Launch Terminal
           </div>
         )}
       </div>
