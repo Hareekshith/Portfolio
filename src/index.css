@@ -224,3 +224,28 @@ h1, h2, h3, h4, h5 {
   scrollbar-width: thin;
   scrollbar-color: #d97706 var(--color-mocha-dark);
 }
+
+/* Horizontal Scrollbar for Resume ATS Sheet */
+.custom-resume-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.custom-resume-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.custom-resume-scroll::-webkit-scrollbar-track {
+  background: var(--color-mocha-dark);
+  border-radius: 999px;
+}
+
+.custom-resume-scroll::-webkit-scrollbar-thumb {
+  background: rgba(217, 119, 6, 0.45);
+  border-radius: 999px;
+  border: 1px solid var(--color-mocha-dark);
+}
+
+.custom-resume-scroll::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}

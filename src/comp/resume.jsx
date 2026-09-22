@@ -2,27 +2,35 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="w-full py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    <div className="w-full py-6 sm:py-10 px-3 sm:px-6 lg:px-8 flex flex-col items-center">
 
-      {/* Download Button Row */}
-      <div className="max-w-4xl w-full flex justify-end mb-6">
-        <a
-          href="/ATS_Resume_Hareekshith.pdf"
-          download="Hareekshith_Resume.pdf"
-          className="btn-primary gap-2 shadow-lg"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-          </svg>
-          <span>Download Resume PDF</span>
-        </a>
+      {/* Download Button Row & Mobile Guidance */}
+      <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-between gap-3 mb-6">
+        <div className="flex items-center gap-2 text-[11px] font-mono text-[#d97706] bg-[#d97706]/10 border border-[#d97706]/30 px-3 py-1.5 rounded-lg md:hidden w-full sm:w-auto justify-center">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#d97706] animate-pulse"></span>
+          <span>ATS 1:1 PAPER VIEW // SWIPE HORIZONTALLY TO INSPECT</span>
+        </div>
+        <div className="w-full sm:w-auto flex justify-end ml-auto">
+          <a
+            href="/ATS_Resume_Hareekshith.pdf"
+            download="Hareekshith_Resume.pdf"
+            className="btn-primary gap-2 shadow-lg w-full sm:w-auto text-center"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>Download Resume PDF</span>
+          </a>
+        </div>
       </div>
 
-      <article className="max-w-5xl w-full flat-card shadow-2xl relative">
-        <div className="hud-bracket hud-bracket-tl"></div>
-        <div className="hud-bracket hud-bracket-tr"></div>
-        <div className="hud-bracket hud-bracket-bl"></div>
-        <div className="hud-bracket hud-bracket-br"></div>
+      {/* Horizontal Swipe Container preserving 1:1 ATS paper dimensions & exact alignment */}
+      <div className="w-full max-w-5xl overflow-x-auto pb-4 custom-resume-scroll">
+        <article className="min-w-[700px] md:min-w-full w-full flat-card shadow-2xl relative">
+          <div className="hud-bracket hud-bracket-tl"></div>
+          <div className="hud-bracket hud-bracket-tr"></div>
+          <div className="hud-bracket hud-bracket-bl"></div>
+          <div className="hud-bracket hud-bracket-br"></div>
 
         {/* Header */}
         <header className="text-center mb-8 pt-4">
@@ -190,6 +198,7 @@ continuing to grow professionally.</p>
           </div>
         </section>
       </article>
+      </div>
     </div>
   );
 };
