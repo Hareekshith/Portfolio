@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 
 const projectsData = [
   {
+    title: "EPCRAS",
+    paragraph: "A Patch Compliance and a Risk management solution, following a simple architecture.",
+    link: "https://github.com/Hareekshith/EPCRAS",
+    category: 'Cyber Security'
+  },
+  {
     title: 'Keylogger Detector',
     paragraph: 'A utility developed for Linux to detect malicious keyloggers based on heuristic process and keystroke behaviors.',
     link: 'https://github.com/Hareekshith/keylogger-detection',
