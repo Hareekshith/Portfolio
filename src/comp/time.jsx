@@ -46,7 +46,7 @@ const TimelineSection = ({ isFullTimeline = false }) => {
   }
 
   return (
-    <div id="time" className="my-6 sm:my-8 bg-[#0e1118]/95 border border-white/15 rounded-2xl mx-0 sm:mx-4 md:mx-10 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+    <div id="time" className="mt-4 sm:mt-6 mb-2 sm:mb-4 bg-[#0e1118]/95 border border-white/15 rounded-2xl mx-0 sm:mx-4 md:mx-10 p-4 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
       {/* Corner Brackets */}
       <div className="hud-bracket hud-bracket-tl"></div>
       <div className="hud-bracket hud-bracket-tr"></div>
@@ -94,7 +94,7 @@ const TimelineSection = ({ isFullTimeline = false }) => {
 
       {/* Read More Button (only on Home page) */}
       {!isFullTimeline && (
-        <div className="flex justify-center mt-8 sm:mt-12 pt-6 border-t border-white/10">
+        <div className="flex justify-center mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/10">
           <Link 
             id="rm" 
             to="/tl" 

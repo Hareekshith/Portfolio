@@ -14,7 +14,7 @@ const socialLinks = [
 
 const SocialsPage = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-4 sm:pb-6">
       
       {/* Title */}
       <div className="flex items-center justify-center gap-2.5 sm:gap-3 my-8 sm:my-12">
@@ -30,7 +30,7 @@ const SocialsPage = () => {
       </p>
 
       {/* Hardware Interface Ports Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 mb-12 sm:mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 mb-8 sm:mb-10">
         {socialLinks.map((link, index) => (
           <a 
             key={index} 

@@ -86,7 +86,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <section className="container mx-auto px-4 sm:px-6 pt-4 sm:pt-6 pb-2 sm:pb-4">
       {/* Header & Filter Controls */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 sm:mb-12">
         <div className="flex items-center gap-3 sm:gap-4 flex-grow">

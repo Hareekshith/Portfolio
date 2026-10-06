@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="w-full py-6 sm:py-10 px-3 sm:px-6 lg:px-8 flex flex-col items-center">
+    <div className="w-full pt-6 sm:pt-8 pb-2 sm:pb-4 px-3 sm:px-6 lg:px-8 flex flex-col items-center">
 
       {/* Download Button Row & Mobile Guidance */}
       <div className="max-w-5xl w-full flex flex-col sm:flex-row items-center justify-between gap-3 mb-6">

@@ -85,7 +85,7 @@ const skillsData = [
 
 const SkillsSection = () => {
   return (
-    <section className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <section className="container mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-4 sm:pb-6">
       {/* Circuit Header */}
       <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-12">
         <span className="w-2.5 h-2.5 rounded-sm bg-[#d97706] shadow-[0_0_8px_rgba(217,119,6,0.8)]"></span>

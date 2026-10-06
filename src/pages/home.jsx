@@ -8,7 +8,7 @@ const Home = () => {
   const pfpPath = 'https://raw.githubusercontent.com/Hareekshith/Portfolio/main/public/img/pfp.webp';
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-4 sm:pb-6">
       
       {/* 1. Hero Section: Split Layout with Cyber Console & Hardware Telemetry */}
       <section className="min-h-[80vh] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center border-b border-white/10 mb-16 sm:mb-24 py-6 sm:py-10 relative">
@@ -106,7 +106,7 @@ const Home = () => {
       </section>
 
       {/* 2. About Me: Tactical Hardware Deck */}
-      <section id="bio" className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 mb-16 sm:mb-28 items-start scroll-mt-24">
+      <section id="bio" className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 mb-10 sm:mb-16 items-start scroll-mt-24">
         
         {/* Profile Security Badge (4 cols) */}
         <div className="md:col-span-4 flex justify-center w-full">
@@ -155,7 +155,7 @@ const Home = () => {
       </section>
 
       {/* 3. Timeline Section with Circuit Bus Header */}
-      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-8 mt-12 sm:mt-16">
+      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 mt-8 sm:mt-12">
         <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-sm bg-[#d97706] shadow-[0_0_8px_rgba(217,119,6,0.8)]"></span>
         <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-white text-center font-mono">
           Chronological Event Bus

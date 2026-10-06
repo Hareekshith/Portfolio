@@ -19,7 +19,7 @@ function App() {
       {/* Header and Footer are persistent across pages */}
       <Header />
       
-      <main className="pb-10">
+      <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/exp" element={<ExperiencePage />} />
